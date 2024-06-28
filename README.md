@@ -84,7 +84,7 @@ shown here https://cybersecuritynews.com/windows-event-log-analysis/  with autho
 
 2. Log Table: Displays the logs based on the category selected in the Basic Filters.
 
-   ![Tabla1](https://github.com/gustavoparedes/QuickLog/assets/61228478/a947b4bd-3c81-40ed-a756-6c757dc6609c)
+![Tabla1](https://github.com/gustavoparedes/QuickLog/assets/61228478/a947b4bd-3c81-40ed-a756-6c757dc6609c)
 
 You can navigate from cell to cell, and the content of each cell will be displayed in the text box as you move.
 
@@ -107,12 +107,12 @@ EventMessageXML Visualization
 
 4. Labels and Comments: Options to create, delete, and assign labels, as well as to create, update, and delete comments.
 
-   ![Labels and comments](https://github.com/gustavoparedes/QuickLog/assets/61228478/d3ef32fc-600c-42f7-81a3-238cf8f2a3ab)
+![Labels and comments](https://github.com/gustavoparedes/QuickLog/assets/61228478/d3ef32fc-600c-42f7-81a3-238cf8f2a3ab)
 
 
 5. Save to: Options to export the logs currently displayed in the log table to PDF or CSV.
 
-   ![SaveTo](https://github.com/gustavoparedes/QuickLog/assets/61228478/48892f2d-f599-4d7f-b28f-b57f8b738148)
+![SaveTo](https://github.com/gustavoparedes/QuickLog/assets/61228478/48892f2d-f599-4d7f-b28f-b57f8b738148)
 
 
 7. Time-Related Filters: Allows you to generate a filter based on the start time of one log and the end time of another,
@@ -128,7 +128,7 @@ EventMessageXML Visualization
 8. Custom Filters: Allows granular filtering by any of the fields in each log. Remember that basic filters only display categorized events.
    Basic custom filters can be created that include text search options; this text will be searched in the EventMessage and EventMessageXML fields.
 
-   ![CustomFilter](https://github.com/gustavoparedes/QuickLog/assets/61228478/2fc087d0-5a5b-4c53-834c-0ed10be8b9ce)
+![CustomFilter](https://github.com/gustavoparedes/QuickLog/assets/61228478/2fc087d0-5a5b-4c53-834c-0ed10be8b9ce)
 
    Filters can be applied to all fields of the logs. The search logic between different fields is an AND operation, meaning that the filter is applied as follows:
 
