@@ -78,13 +78,19 @@ shown here https://cybersecuritynews.com/windows-event-log-analysis/  with autho
 
 ![Basic Filters1](https://github.com/gustavoparedes/QuickLog/assets/61228478/92e4ae0f-6f00-449d-86af-9017ac03bfb9)
 ![Basic Filters2](https://github.com/gustavoparedes/QuickLog/assets/61228478/6a929ce0-ad10-4ab7-a1b2-6d6dfee3c1af)
-Basic Filters
+
+
+Basic Filters:
+
+
 ![Basic Filters3](https://github.com/gustavoparedes/QuickLog/assets/61228478/ea292296-9407-4188-8f0d-e96d53af7b08)
 ![Basic Filters4](https://github.com/gustavoparedes/QuickLog/assets/61228478/affe8b14-62a3-480d-b86a-0bcea6698e0b)
 
 
 
-2. Log Table: Displays the logs based on the category selected in the Basic Filters.
+2. Log Table:
+
+   Displays the logs based on the category selected in the Basic Filters.
 
 ![Tabla1](https://github.com/gustavoparedes/QuickLog/assets/61228478/a947b4bd-3c81-40ed-a756-6c757dc6609c)
 
@@ -99,7 +105,9 @@ EventMessageXML Visualization
 ![Tabla3](https://github.com/gustavoparedes/QuickLog/assets/61228478/d7a79259-4931-4b17-8dc9-5376a5c565ba)
 
 
-3. Text Box: Displays the content of the selected cell using keyboard arrows or the mouse.
+3. Text Box:
+
+   Displays the content of the selected cell using keyboard arrows or the mouse.
    It allows you to see highlighted search results and read the log contents comfortably.
 
    
@@ -107,27 +115,37 @@ EventMessageXML Visualization
 
 
 
-4. Labels and Comments: Options to create, delete, and assign labels, as well as to create, update, and delete comments.
+4. Labels and Comments:
+
+   Options to create, delete, and assign labels, as well as to create, update, and delete comments.
 
 ![Labels and comments](https://github.com/gustavoparedes/QuickLog/assets/61228478/d3ef32fc-600c-42f7-81a3-238cf8f2a3ab)
 
 
-5. Save to: Options to export the logs currently displayed in the log table to PDF or CSV.
+5. Save to:
+
+   Options to export the logs currently displayed in the log table to PDF or CSV.
 
 ![SaveTo](https://github.com/gustavoparedes/QuickLog/assets/61228478/48892f2d-f599-4d7f-b28f-b57f8b738148)
 
 
-7. Time-Related Filters: Allows you to generate a filter based on the start time of one log and the end time of another,
+6. Time-Related Filters:
+
+   Allows you to generate a filter based on the start time of one log and the end time of another,
    such as a user's session start and end times. You can also create a time filter for a specific number of minutes around
    the time of an event. For example, if an event occurred at 14:01:31 and you use the "Minutes around" option with one minute,
    it will filter all events between one minute before and one minute after, i.e., between 14:00:31 and 14:02:31.
 
 ![TimeFilters](https://github.com/gustavoparedes/QuickLog/assets/61228478/a99c0939-c0e4-4b64-968d-9ec532fdb755)
 
-7. Log Console: Displays operation messages
+7. Log Console:
+
+   Displays operation messages
 
 
-8. Custom Filters: Allows granular filtering by any of the fields in each log. Remember that basic filters only display categorized events.
+8. Custom Filters:
+
+   Allows granular filtering by any of the fields in each log. Remember that basic filters only display categorized events.
    Basic custom filters can be created that include text search options; this text will be searched in the EventMessage and EventMessageXML fields.
 
 ![CustomFilter](https://github.com/gustavoparedes/QuickLog/assets/61228478/2fc087d0-5a5b-4c53-834c-0ed10be8b9ce)
@@ -149,7 +167,9 @@ Or search for: -1001 AND logontype'>2<
 
 It will find search matches whether they are AND or OR conditions within either the EventMessage or EventMessageXML fields.
 
+9. Progress bar:
 
+    The progress bar displays the progress of logs being loaded into the database as well as the processing of the logs.
 
 
 
