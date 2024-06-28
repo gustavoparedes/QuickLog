@@ -107,9 +107,15 @@ EventMessageXML Visualization
 
 4. Labels and Comments: Options to create, delete, and assign labels, as well as to create, update, and delete comments.
 
+   ![Labels and comments](https://github.com/gustavoparedes/QuickLog/assets/61228478/d3ef32fc-600c-42f7-81a3-238cf8f2a3ab)
+
+
 5. Save to: Options to export the logs currently displayed in the log table to PDF or CSV.
 
-6. Time-Related Filters: Allows you to generate a filter based on the start time of one log and the end time of another,
+   ![SaveTo](https://github.com/gustavoparedes/QuickLog/assets/61228478/48892f2d-f599-4d7f-b28f-b57f8b738148)
+
+
+7. Time-Related Filters: Allows you to generate a filter based on the start time of one log and the end time of another,
    such as a user's session start and end times. You can also create a time filter for a specific number of minutes around
    the time of an event. For example, if an event occurred at 14:01:31 and you use the "Minutes around" option with one minute,
    it will filter all events between one minute before and one minute after, i.e., between 14:00:31 and 14:02:31.
