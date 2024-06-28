@@ -123,3 +123,30 @@ EventMessageXML Visualization
    Basic custom filters can be created that include text search options; this text will be searched in the EventMessage and EventMessageXML fields.
 
    ![CustomFilter](https://github.com/gustavoparedes/QuickLog/assets/61228478/2fc087d0-5a5b-4c53-834c-0ed10be8b9ce)
+
+   Filters can be applied to all fields of the logs. The search logic between different fields is an AND operation, meaning that the filter is applied as follows:
+
+First, it must be within the time range as the primary condition, AND it must match the UserID, AND EventID, AND Machine Name, AND Level, AND LogName, AND Label, 
+AND the search terms within either the EventMessage or EventMessageXML fields.
+
+Search Term: Will search within the EventMessage or EventMessageXML fields and can use the logical operators AND and OR.
+
+For example, you can search for: -1001
+
+![Search1](https://github.com/gustavoparedes/QuickLog/assets/61228478/4e918d94-a504-4cd5-b3f2-8c3c9b9c8618)
+
+Or search for: -1001 AND logontype'>2<
+
+![Search2](https://github.com/gustavoparedes/QuickLog/assets/61228478/05186998-2137-42d0-bbc9-10cb523d6a35)
+
+It will find search matches whether they are AND or OR conditions within either the EventMessage or EventMessageXML fields.
+
+
+
+
+
+
+
+
+
+
