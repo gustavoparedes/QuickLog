@@ -77,7 +77,7 @@ From the fourth element onward, events are categorized into areas of interest ba
 shown here https://cybersecuritynews.com/windows-event-log-analysis/  with author credits to Forward Defence.
 
 ![Basic Filters1](https://github.com/gustavoparedes/QuickLog/assets/61228478/92e4ae0f-6f00-449d-86af-9017ac03bfb9)
-![Basic Filters2](https://github.com/gustavoparedes/QuickLog/assets/61228478/8fb94f05-40d3-4f31-a08e-ab2c0bc1236e)
+
 ![Basic Filters3](https://github.com/gustavoparedes/QuickLog/assets/61228478/ea292296-9407-4188-8f0d-e96d53af7b08)
 ![Basic Filters4](https://github.com/gustavoparedes/QuickLog/assets/61228478/affe8b14-62a3-480d-b86a-0bcea6698e0b)
 
