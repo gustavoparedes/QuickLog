@@ -163,15 +163,39 @@ For example, you can search for: -1001
 
 Or search for: -1001 AND logontype'>2<
 
-![Search2](https://github.com/gustavoparedes/QuickLog/assets/61228478/05186998-2137-42d0-bbc9-10cb523d6a35)
+![Search2](https://github.com/gustavoparedes/QuickLog/assets/61228478/30698eb3-4a62-4620-8aa5-1b8a7ddcbeb9)
+
 
 It will find search matches whether they are AND or OR conditions within either the EventMessage or EventMessageXML fields.
 
 9. Progress bar:
 
-    The progress bar displays the progress of logs being loaded into the database as well as the processing of the logs.
+   The progress bar displays the progress of logs being loaded into the database as well as the processing of the logs.
 
 
+
+
+
+
+
+
+The workflow is basically to process one or several (usually all) logs from one or several machines and then start searching 
+for logs related to activities of interest, put tags and comments and finally make a timeline for example with the relevant 
+sessions or events that were logged sorted chronologically as a timeline.
+
+
+The first thing to do is to create a workspace
+
+
+
+Create / Open / Close a Workspace:
+
+![Work Spaces](https://github.com/gustavoparedes/QuickLog/assets/61228478/1f3b0da8-bea2-4ee2-9b18-7d947ec7f59c)
+
+
+
+Afterward, add logs using the "Acquire Logs" option for one or multiple files or "Process Log Folder" to process all .evtx files within a folder.
+The logs will be stored in the database and classified according to the predefined categories.
 
 
 
