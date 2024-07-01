@@ -126,8 +126,12 @@ EventMessageXML Visualization
 
 6. Time-Related Filters:
 
+![TimeFilters](https://github.com/gustavoparedes/QuickLog/assets/61228478/a99c0939-c0e4-4b64-968d-9ec532fdb755)
+
+
    Allows you to generate a filter based on the start time of one log and the end time of another,
    such as a user's session start and end times.
+   
 
 ![Time Range](https://github.com/gustavoparedes/QuickLog/assets/61228478/6b2ef126-1b13-4fca-9755-74619f9ae6c7)
 
@@ -136,7 +140,7 @@ EventMessageXML Visualization
    the time of an event. For example, if an event occurred at 14:01:31 and you use the "Minutes around" option with one minute,
    it will filter all events between one minute before and one minute after, i.e., between 14:00:31 and 14:02:31.
 
-![TimeFilters](https://github.com/gustavoparedes/QuickLog/assets/61228478/a99c0939-c0e4-4b64-968d-9ec532fdb755)
+
 
 7. Log Console:
 
