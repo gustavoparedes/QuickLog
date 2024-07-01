@@ -80,11 +80,6 @@ shown here https://cybersecuritynews.com/windows-event-log-analysis/  with autho
 ![Basic Filters2](https://github.com/gustavoparedes/QuickLog/assets/61228478/6a929ce0-ad10-4ab7-a1b2-6d6dfee3c1af)
 
 
-Basic Filters:
-
-
-![Basic Filters3](https://github.com/gustavoparedes/QuickLog/assets/61228478/ea292296-9407-4188-8f0d-e96d53af7b08)
-![Basic Filters4](https://github.com/gustavoparedes/QuickLog/assets/61228478/affe8b14-62a3-480d-b86a-0bcea6698e0b)
 
 
 
@@ -132,7 +127,12 @@ EventMessageXML Visualization
 6. Time-Related Filters:
 
    Allows you to generate a filter based on the start time of one log and the end time of another,
-   such as a user's session start and end times. You can also create a time filter for a specific number of minutes around
+   such as a user's session start and end times.
+
+![Time Range](https://github.com/gustavoparedes/QuickLog/assets/61228478/6b2ef126-1b13-4fca-9755-74619f9ae6c7)
+
+
+   You can also create a time filter for a specific number of minutes around
    the time of an event. For example, if an event occurred at 14:01:31 and you use the "Minutes around" option with one minute,
    it will filter all events between one minute before and one minute after, i.e., between 14:00:31 and 14:02:31.
 
@@ -184,6 +184,10 @@ for logs related to activities of interest, put tags and comments and finally ma
 sessions or events that were logged sorted chronologically as a timeline.
 
 
+![Time line1](https://github.com/gustavoparedes/QuickLog/assets/61228478/d68134d1-a69a-4c2c-95ba-ceae46f6b200)
+
+
+
 The first thing to do is to create a workspace
 
 
@@ -198,6 +202,12 @@ Afterward, add logs using the "Acquire Logs" option for one or multiple files or
 The logs will be stored in the database and classified according to the predefined categories.
 
 
+
+Basic Filters:
+
+
+![Basic Filters3](https://github.com/gustavoparedes/QuickLog/assets/61228478/ea292296-9407-4188-8f0d-e96d53af7b08)
+![Basic Filters4](https://github.com/gustavoparedes/QuickLog/assets/61228478/affe8b14-62a3-480d-b86a-0bcea6698e0b)
 
 
 
