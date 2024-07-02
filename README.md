@@ -225,7 +225,9 @@ Basic Filters:
 
 At the end of the processing, you will see all the logs classified, and the users found in the logs will be displayed.
 
+
+
 ![Finish1](https://github.com/gustavoparedes/QuickLog/assets/61228478/aab04536-60c5-4f0f-a90e-fcceeb8bfd60)
 
 
-
+The compiled program can be run from a USB drive, external disk, or network folder without the need for installation.
