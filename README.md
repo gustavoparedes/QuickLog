@@ -2,11 +2,14 @@
 
 
 # QuickLog
-Windows log viewer organized according to this work https://cybersecuritynews.com/windows-event-log-analysis/ for digital forensics classes 
-with free tools taught at Internet Solutions S.A.S in Bogota, Colombia.
 
-Quick Log is a simple tool for viewing Windows logs in EVTX format. The logs are organized into workspaces. It requires Windows 10 64-bit and a resolution of 1920x1080.
-If you are looking for the compiled version, you can download it from the releases link in the right column of this page.
+Quick Log is a simple tool to visualize Windows logs in EVTX format, organized according to this work: https://cybersecuritynews.com/windows-event-log-analysis/ 
+and thought for the digital forensics courses with open source tools dictated in Internet Solutions S.A.S, Bogota, Colombia. 
+It requires Windows 10 64-bit and a resolution of 1920x1080. 
+
+If you are looking for the compiled version, you can download it from the versions link on the right column of this page.
+
+The logs are organized into workspaces.
 
 # Workspace
 
