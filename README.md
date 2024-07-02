@@ -1,9 +1,13 @@
+
+
+
 # QuickLog
 Windows log viewer organized according to this job https://cybersecuritynews.com/windows-event-log-analysis/
 
 Quick Log is a simple tool for viewing Windows logs in EVTX format. The logs are organized into workspaces. It requires Windows 10 64-bit and a resolution of 1920x1080.
+If you are looking for the compiled version, you can download it from the releases link in the right column of this page.
 
-Workspace
+# Workspace
 
 A workspace is a "container" for logs that can hold one or more .evtx files from one or multiple machines running Windows. Before you can start viewing the logs, you need 
 to create a new workspace or open a previously created one. By default, a newly created workspace does not contain any log files; you must add logs after creating or opening 
