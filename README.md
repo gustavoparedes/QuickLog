@@ -13,7 +13,7 @@ A workspace is a "container" for logs that can hold one or more .evtx files from
 to create a new workspace or open a previously created one. By default, a newly created workspace does not contain any log files; you must add logs after creating or opening 
 the workspace. Additional logs can always be added. A workspace can also be opened to continue reviewing logs and can be closed when necessary.
 
-Log Acquisition
+# Log Acquisition
 
 During log acquisition, Windows logs are read and the most relevant fields are stored in a SQLite database. Once the reading and storage process is complete, the original 
 log files are no longer needed, as the database will be used instead. Each log entry is a record in the database within the logs table, and each record contains the 
@@ -61,12 +61,12 @@ ActivityID:
 A globally unique identifier (GUID) for the ongoing activity with which the event is associated.
 
 
-The Interface:
+# The Interface:
 
 
 ![Interfaz](https://github.com/gustavoparedes/QuickLog/assets/61228478/c2bec1e0-254a-44b4-9fe3-163e60e94938)
 
-1. Acquire and Basic Filters:
+# 1. Acquire and Basic Filters:
 
    
 The first three items are for:
@@ -87,7 +87,7 @@ shown here https://cybersecuritynews.com/windows-event-log-analysis/  with autho
 
 
 
-2. Log Table:
+# 2. Log Table:
 
    Displays the logs based on the category selected in the Basic Filters.
 
@@ -104,7 +104,7 @@ EventMessageXML Visualization
 ![Tabla3](https://github.com/gustavoparedes/QuickLog/assets/61228478/d7a79259-4931-4b17-8dc9-5376a5c565ba)
 
 
-3. Text Box:
+# 3. Text Box:
 
    Displays the content of the selected cell using keyboard arrows or the mouse.
    It allows you to see highlighted search results and read the log contents comfortably.
@@ -114,21 +114,21 @@ EventMessageXML Visualization
 
 
 
-4. Labels and Comments:
+# 4. Labels and Comments:
 
    Options to create, delete, and assign labels, as well as to create, update, and delete comments.
 
 ![Labels and comments](https://github.com/gustavoparedes/QuickLog/assets/61228478/d3ef32fc-600c-42f7-81a3-238cf8f2a3ab)
 
 
-5. Save to:
+# 5. Save to:
 
    Options to export the logs currently displayed in the log table to PDF or CSV.
 
 ![SaveTo](https://github.com/gustavoparedes/QuickLog/assets/61228478/48892f2d-f599-4d7f-b28f-b57f8b738148)
 
 
-6. Time-Related Filters:
+# 6. Time-Related Filters:
 
 ![TimeFilters](https://github.com/gustavoparedes/QuickLog/assets/61228478/a99c0939-c0e4-4b64-968d-9ec532fdb755)
 
@@ -146,12 +146,12 @@ EventMessageXML Visualization
 
 
 
-7. Log Console:
+# 7. Log Console:
 
    Displays operation messages
 
 
-8. Custom Filters:
+# 8. Custom Filters:
 
    Allows granular filtering by any of the fields in each log. Remember that basic filters only display categorized events.
    Basic custom filters can be created that include text search options; this text will be searched in the EventMessage and EventMessageXML fields.
@@ -176,7 +176,7 @@ Or search for: -1001 AND logontype'>2<
 
 It will find search matches whether they are AND or OR conditions within either the EventMessage or EventMessageXML fields.
 
-9. Progress bar:
+# 9. Progress bar:
 
    The progress bar displays the progress of logs being loaded into the database as well as the processing of the logs.
 
@@ -187,7 +187,9 @@ It will find search matches whether they are AND or OR conditions within either 
 
 
 
-The workflow is basically to process one or several (usually all) logs from one or several machines and then start searching 
+# The workflow: 
+
+Basically to process one or several (usually all) logs from one or several machines and then start searching 
 for logs related to activities of interest, put tags and comments and finally make a timeline for example with the relevant 
 sessions or events that were logged sorted chronologically as a timeline.
 
@@ -200,7 +202,7 @@ The first thing to do is to create a workspace
 
 
 
-Create / Open / Close a Workspace:
+# Create / Open / Close a Workspace:
 
 ![Work Spaces](https://github.com/gustavoparedes/QuickLog/assets/61228478/1f3b0da8-bea2-4ee2-9b18-7d947ec7f59c)
 
