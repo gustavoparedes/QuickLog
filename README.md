@@ -11,13 +11,13 @@ If you are looking for the compiled version, you can download it from the releas
 
 The logs are organized into workspaces.
 
-Workspace
+# Workspace
 
 A workspace is a "container" for logs that can hold one or more .evtx files from one or multiple machines running Windows. Before you can start viewing the logs, you need 
 to create a new workspace or open a previously created one. By default, a newly created workspace does not contain any log files; you must add logs after creating or opening 
 the workspace. Additional logs can always be added. A workspace can also be opened to continue reviewing logs and can be closed when necessary.
 
-Log Acquisition
+# Log Acquisition
 
 During log acquisition, Windows logs are read and the most relevant fields are stored in a SQLite database. Once the reading and storage process is complete, the original 
 log files are no longer needed, as the database will be used instead. Each log entry is a record in the database within the logs table, and each record contains the 
