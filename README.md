@@ -213,6 +213,9 @@ Basic Filters:
 ![Basic Filters3](https://github.com/gustavoparedes/QuickLog/assets/61228478/ea292296-9407-4188-8f0d-e96d53af7b08)
 ![Basic Filters4](https://github.com/gustavoparedes/QuickLog/assets/61228478/affe8b14-62a3-480d-b86a-0bcea6698e0b)
 
+At the end of the processing, you will see all the logs classified, and the users found in the logs will be displayed.
+
+![Finish1](https://github.com/gustavoparedes/QuickLog/assets/61228478/aab04536-60c5-4f0f-a90e-fcceeb8bfd60)
 
 
 
