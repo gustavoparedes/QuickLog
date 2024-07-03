@@ -7,7 +7,7 @@ Quick Log is a simple tool to visualize Windows logs in EVTX format, organized a
 and thought for the digital forensics courses with open source tools dictated in Internet Solutions S.A.S, Bogota, Colombia. 
 It requires Windows 10 64-bit and a resolution of 1920x1080. 
 
-If you are looking for the compiled version, you can download it from the releases link on the right column of this page.
+If you are looking for the compiled version, you can download [here]([url](https://github.com/gustavoparedes/QuickLog/releases/download/v0.1/Compiled.Version.QuickLog.v0.1.rar))
 
 The logs are organized into workspaces.
 
