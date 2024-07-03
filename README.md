@@ -28,7 +28,7 @@ TimeCreated, UserID, EventID, Machine, Level, LogName, EventMessage, EventMessag
 TimeCreated:
 
 The time at which the event was created, stored in UTC. When processing the logs, the time will be adjusted to the local machine's time zone. Keep this in mind and ensure 
-you adjust to the correct time zone by extracting it from the record. Use the evidence's time zone to establish the actual time. For convenience, you could, for example, 
+you adjust to the correct time zone by extracting it from the registry. Use the evidence's time zone to establish the actual time. For convenience, you could, for example, 
 change the machine's time zone to match the evidence during the log processing.
 
 UserID: 
@@ -38,7 +38,7 @@ https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-serve
 
 EventID: 
 
-he identifier of the event.
+The identifier of the event.
 
 Machine: 
 
