@@ -6,10 +6,13 @@
 Quick Log is a simple tool to visualize Windows logs in EVTX format, organized according to this work: https://cybersecuritynews.com/windows-event-log-analysis/ 
 and thought for the digital forensics courses with open source tools dictated in Internet Solutions S.A.S, Bogota, Colombia. 
 It requires Windows 10 64-bit and a resolution of 1920x1080. 
-
-If you are looking for the compiled version, you can download [here]([url](https://github.com/gustavoparedes/QuickLog/releases/download/v0.1/Compiled.Version.QuickLog.v0.1.rar))
-
 The logs are organized into workspaces.
+
+# Download compiled version:
+
+
+You can download [here](https://github.com/gustavoparedes/QuickLog/releases/download/v0.1/Compiled.Version.QuickLog.v0.1.rar) .
+
 
 # Workspace
 
@@ -82,7 +85,7 @@ The first three items are for:
   ![Basic Filters](https://github.com/gustavoparedes/QuickLog/assets/61228478/3cb35628-7da3-4189-98fd-27b4a405e85d)
 
 From the fourth element onward, events are categorized into areas of interest based on the work 
-shown here https://cybersecuritynews.com/windows-event-log-analysis/  with author credits to Forward Defence.
+shown here https://cybersecuritynews.com/windows-event-log-analysis/  with author credits to [Forward Defence](https://forwarddefense.com/).
 
 ![Basic Filters1](https://github.com/gustavoparedes/QuickLog/assets/61228478/92e4ae0f-6f00-449d-86af-9017ac03bfb9)
 ![Basic Filters2](https://github.com/gustavoparedes/QuickLog/assets/61228478/6a929ce0-ad10-4ab7-a1b2-6d6dfee3c1af)
