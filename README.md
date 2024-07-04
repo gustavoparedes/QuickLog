@@ -123,9 +123,76 @@ EventMessageXML Visualization
 
 # 4. Labels and Comments:
 
+   **The use of apostrophes is not supported in labels (next version).**
+   
    Options to create, delete, and assign labels, as well as to create, update, and delete comments.
 
 ![Labels and comments](https://github.com/gustavoparedes/QuickLog/assets/61228478/d3ef32fc-600c-42f7-81a3-238cf8f2a3ab)
+
+Before you can use labels, you must create them using the Label Manager.
+
+![Label Manager1](https://github.com/gustavoparedes/QuickLog/assets/61228478/14312224-cf85-46ad-96b8-c46a94a199a6)
+
+Now, simply click on the blank cell in the "Name" column.
+
+![Label Manager2](https://github.com/gustavoparedes/QuickLog/assets/61228478/91fa5f2e-2f75-4e07-a10a-ad88d930a84b)
+
+Select a color in the "Color" column.
+
+![Label Manager3](https://github.com/gustavoparedes/QuickLog/assets/61228478/ad6d52b5-6646-433e-ae1a-2e9ed5f3ac5d)
+
+And then click on "Save".
+
+![Label Manager4](https://github.com/gustavoparedes/QuickLog/assets/61228478/413ac50f-c6ef-42d3-98ea-47426081559e)
+
+![Label Manager5](https://github.com/gustavoparedes/QuickLog/assets/61228478/45f6f4f7-f117-4afd-89ed-a5d5e16ab8f9)
+
+Now you can close the Label Manager window and return to it whenever you need to create or delete labels.
+
+To apply the labels, you must select the log or logs to which you want to apply the label. Selecting logs:
+
+![SelectLog1](https://github.com/gustavoparedes/QuickLog/assets/61228478/73f813ec-8a75-4a64-861e-637c329e6842)
+
+Once selected, you will see it like this:
+
+![SelectLog2](https://github.com/gustavoparedes/QuickLog/assets/61228478/8558a636-9621-4642-a90d-26bf281ab919)
+
+You can select multiple logs in a row by pressing Shift.
+
+![SelectLog3](https://github.com/gustavoparedes/QuickLog/assets/61228478/0a7a3aef-77d3-49f4-a839-53ecf249c830)
+
+Or select at your discretion by holding down the Ctrl button., as in Windows Explorer.
+
+![SelectLog4](https://github.com/gustavoparedes/QuickLog/assets/61228478/9dec77e6-9a73-424c-b035-0100afbb4e96)
+
+Now that you have the log or logs selected, simply click on "Add Label".
+
+![AddLabel1](https://github.com/gustavoparedes/QuickLog/assets/61228478/e89efebd-fe3f-4bf3-a5de-6b4cdcf83754)
+
+
+You will see a window with the labels created in the Label Manager:
+
+![AddLabel2](https://github.com/gustavoparedes/QuickLog/assets/61228478/180423b4-7446-4138-a2d9-3e59fd5c3285)
+
+
+Simply select the label you want to apply using the same selection method as for the logs, and click on "Set Label".
+
+![AddLabel3](https://github.com/gustavoparedes/QuickLog/assets/61228478/5713289c-490b-4a14-87bd-5ee8ed76c1f3)
+
+Once the label is applied, it will look like this:
+
+![AddLabel4](https://github.com/gustavoparedes/QuickLog/assets/61228478/5a2a1277-7a69-47e5-a043-dddb61c0306f)
+
+
+To add comments, select the log (just one) you want to comment on and click on "Add Comment".
+
+![AddComment1](https://github.com/gustavoparedes/QuickLog/assets/61228478/544c6fc3-3b08-4d52-ba26-446e8d59121b)
+
+
+Use the text box to enter the comment you need.
+
+![AddComment2](https://github.com/gustavoparedes/QuickLog/assets/61228478/572b1821-6085-4732-8976-e668fddca600)
+
 
 
 # 5. Save to:
