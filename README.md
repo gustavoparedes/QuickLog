@@ -260,6 +260,7 @@ It will find search matches whether they are AND or OR conditions within either 
 
    The progress bar displays the progress of logs being loaded into the database as well as the processing of the logs.
 
+![Procesando2](https://github.com/gustavoparedes/QuickLog/assets/61228478/8b749b48-d657-4659-a6e0-8a3874679658)
 
 
 
@@ -307,3 +308,6 @@ At the end of the processing, you will see all the logs classified, and the user
 
 
 The compiled program can be run from a USB drive, external disk, or network folder without the need for installation.
+
+![Finish2](https://github.com/gustavoparedes/QuickLog/assets/61228478/f7091152-5b05-4850-98f9-8847c100333c)
+
