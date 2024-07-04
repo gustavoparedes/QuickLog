@@ -219,6 +219,9 @@ Encontrará coincidencias de búsqueda ya sean condiciones AND u OR dentro de lo
 
 La barra de progreso muestra el avance de los logs que se cargan en la base de datos así como el procesamiento de los logs.
 
+![Procesando2](https://github.com/gustavoparedes/QuickLog/assets/61228478/91ecb5a7-3a78-42ce-b0f3-be907d4bfb8a)
+
+
 # El Flujo de Trabajo:
 
 Básicamente, procesar uno o varios (usualmente todos) logs de una o varias máquinas y luego comenzar a buscar logs relacionados con actividades de interés, poner etiquetas y comentarios, y finalmente crear una línea de tiempo con las sesiones o eventos relevantes que fueron registrados en orden cronológico como una línea de tiempo.
