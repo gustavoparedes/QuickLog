@@ -28,42 +28,42 @@ following fields with descriptive names:
 
 TimeCreated, UserID, EventID, Machine, Level, LogName, EventMessage, EventMessageXML, and ActivityID.
 
-TimeCreated:
+**TimeCreated:**
 
 The time at which the event was created, stored in UTC. When processing the logs, the time will be adjusted to the local machine's time zone. Keep this in mind and ensure 
 you adjust to the correct time zone by extracting it from the registry. Use the evidence's time zone to establish the actual time. For convenience, you could, for example, 
 change the machine's time zone to match the evidence during the log processing.
 
-UserID: 
+**UserID:** 
 
 The security descriptor of the user whose context is used to publish the event. For detailed information on this topic, see here:
 https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn743661(v=ws.11)
 
-EventID: 
+**EventID:** 
 
 The identifier of the event.
 
-Machine: 
+**Machine:**
 
 The name of the machine where this event was logged.
 
-Level:
+**Level:**
 
 The level of the event. The level indicates the severity of the event.
 
-LogName: 
+**LogName:** 
 
 The name of the event log where this event is recorded.
 
-EventMessage: 
+**EventMessage:** 
 
 The event message in the current locale.
 
-EventMessageXML: 
+**EventMessageXML:**
 
 XML representation of the event. All event properties are represented in the event's XML.
 
-ActivityID: 
+**ActivityID:** 
 
 A globally unique identifier (GUID) for the ongoing activity with which the event is associated.
 
