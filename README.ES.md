@@ -166,7 +166,11 @@ Use el cuadro de texto para ingresar el comentario que necesita.
 ![AddComment2](https://github.com/gustavoparedes/QuickLog/assets/61228478/572b1821-6085-4732-8976-e668fddca600)
 
 
+Asegurese de dar click en "Save Comment".
 
+![AddComment3](https://github.com/gustavoparedes/QuickLog/assets/61228478/8755c012-9ecd-4e73-9a06-b322c48bd8c1)
+
+![AddComment4](https://github.com/gustavoparedes/QuickLog/assets/61228478/72516cb0-3fde-48a9-aa8b-e70dbaff7b28)
 
 
 # 5. Guardar en:
