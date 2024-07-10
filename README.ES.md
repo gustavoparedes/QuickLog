@@ -1,7 +1,6 @@
 # QuickLog
 
-
-![FiltrosBásicos4](https://github.com/gustavoparedes/QuickLog/assets/61228478/affe8b14-62a3-480d-b86a-0bcea6698e0b)
+![Finish2](https://github.com/gustavoparedes/QuickLog/assets/61228478/f7091152-5b05-4850-98f9-8847c100333c)
 
 
 # Descargar version compilada
@@ -10,7 +9,7 @@ Puede descargarla [aqui](https://github.com/gustavoparedes/QuickLog/releases/dow
 
 
 
-Quick Log es una herramienta simple para visualizar logs de Windows en formato EVTX, organizada según este trabajo: 
+**Quick Log** es una herramienta simple para visualizar logs de Windows en formato EVTX, organizada según este trabajo: 
 https://cybersecuritynews.com/windows-event-log-analysis/ y pensada para los cursos de forense digital con herramientas 
 de código abierto dictados en Internet Solutions S.A.S, Bogotá, Colombia. Requiere Windows 10 de 64 bits y una resolución de 1920x1080. 
 
