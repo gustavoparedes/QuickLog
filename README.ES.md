@@ -252,3 +252,7 @@ Al final del procesamiento, verás todos los logs clasificados y se mostrarán l
 ![Final1](https://github.com/gustavoparedes/QuickLog/assets/61228478/aab04536-60c5-4f0f-a90e-fcceeb8bfd60)
 
 El programa compilado se puede ejecutar desde una unidad USB, disco externo o carpeta de red sin necesidad de instalación.
+
+# QuickLog
+
+![Finish2](https://github.com/gustavoparedes/QuickLog/assets/61228478/f7091152-5b05-4850-98f9-8847c100333c)
