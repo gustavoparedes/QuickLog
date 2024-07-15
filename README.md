@@ -220,6 +220,7 @@ Make sure to click on "Save Comment".
 
    Allows to generate a filter based on the time of two records, taking the lower or older time as the lower limit 
    and the higher or later time as the upper limit.
+   For example, we could view all logs generated during a user's session.
    
 
 ![Time Range](https://github.com/gustavoparedes/QuickLog/assets/61228478/6b2ef126-1b13-4fca-9755-74619f9ae6c7)
