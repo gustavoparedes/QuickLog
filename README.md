@@ -218,8 +218,8 @@ Make sure to click on "Save Comment".
 ![TimeFilters](https://github.com/gustavoparedes/QuickLog/assets/61228478/a99c0939-c0e4-4b64-968d-9ec532fdb755)
 
 
-   Allows you to generate a filter based on the start time of one log and the end time of another,
-   such as a user's session start and end times.
+   Allows to generate a filter based on the time of two records, taking the lower or older time as the lower limit 
+   and the higher or later time as the upper limit.
    
 
 ![Time Range](https://github.com/gustavoparedes/QuickLog/assets/61228478/6b2ef126-1b13-4fca-9755-74619f9ae6c7)
