@@ -189,7 +189,8 @@ Opciones para exportar los logs que se muestran actualmente en la tabla de logs 
 
 ![FiltrosTiempo](https://github.com/gustavoparedes/QuickLog/assets/61228478/a99c0939-c0e4-4b64-968d-9ec532fdb755)
 
-Permite generar un filtro basado en el tiempo de inicio de un log y el tiempo de finalización de otro, como los tiempos de inicio y fin de sesión de un usuario.
+Permite generar un filtro basado en la hora de dos registros, tomando la hora menor o más antigua como el límite inferior y la hora mayor o más reciente como el límite superior.
+Por ejemplo, podríamos ver todos los logs generados durante la sesión de un usuario.
 
 ![RangoTiempo](https://github.com/gustavoparedes/QuickLog/assets/61228478/6b2ef126-1b13-4fca-9755-74619f9ae6c7)
 
