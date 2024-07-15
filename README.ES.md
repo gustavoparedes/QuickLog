@@ -18,7 +18,7 @@ Los logs se organizan en workspaces.
 
 # Workspace
 
-Un workspace es un "contenedor" de logs que puede contener uno o más archivos .evtx de una o varias máquinas que ejecutan Windows. Antes de poder empezar a visualizar los logs, debes crear un nuevo workspace o abrir uno previamente creado. Por defecto, un workspace recién creado no contiene archivos de logs; debes agregar logs después de crear o abrir el workspace. Siempre se pueden agregar logs adicionales. Un workspace también puede ser abierto para continuar revisando logs y puede ser cerrado cuando sea necesario.
+Un workspace es un "contenedor" de logs que puede contener uno o más archivos .evtx de una o varias máquinas que ejecutan Windows. Antes de poder empezar a visualizar los logs, debes crear un nuevo workspace o abrir uno previamente creado. Por defecto, un workspace recién creado no contiene archivos de logs; debes agregar logs después de crear el workspace. Siempre se pueden agregar logs adicionales. Un workspace también puede ser abierto para continuar revisando logs y puede ser cerrado cuando sea necesario.
 
 # Adquisición de Logs
 
