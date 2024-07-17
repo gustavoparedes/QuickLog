@@ -192,6 +192,8 @@ Opciones para exportar los logs que se muestran actualmente en la tabla de logs 
 Permite generar un filtro basado en la hora de dos registros, tomando la hora menor o más antigua como el límite inferior y la hora mayor o más reciente como el límite superior.
 Por ejemplo, podríamos ver todos los logs generados durante la sesión de un usuario.
 
+**Primero seleccione los dos logs que quiere usar para hacer el filtro de rango de tiempo. Luego, haga clic en el botón "Time Range".**
+
 ![RangoTiempo](https://github.com/gustavoparedes/QuickLog/assets/61228478/6b2ef126-1b13-4fca-9755-74619f9ae6c7)
 
 También puedes crear un filtro de tiempo para un número específico de minutos alrededor del tiempo de un evento. Por ejemplo, si un evento ocurrió a las 14:01:31 y usas la opción "Minutos alrededor" con un minuto, filtrará todos los eventos entre un minuto antes y un minuto después, es decir, entre las 14:00:31 y las 14:02:31.
