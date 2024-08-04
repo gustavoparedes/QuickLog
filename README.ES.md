@@ -18,7 +18,7 @@ Los logs se organizan en workspaces.
 
 # Workspace
 
-Un workspace es un "contenedor" de logs que puede contener uno o más archivos .evtx de una o varias máquinas que ejecutan Windows. Antes de poder empezar a visualizar los logs, debes crear un nuevo workspace o abrir uno previamente creado. Por defecto, un workspace recién creado no contiene archivos de logs; debes agregar logs después de crear el workspace. Siempre se pueden agregar logs adicionales. Un workspace también puede ser abierto para continuar revisando logs y puede ser cerrado cuando sea necesario.
+Un workspace es un "contenedor" de logs que puede contener uno o más archivos .evtx de una o varias máquinas que ejecutan Windows. Antes de poder empezar a visualizar los logs, debe crear un nuevo workspace o abrir uno previamente creado. Por defecto, un workspace recién creado no contiene archivos de logs; debe agregar logs después de crear el workspace. Siempre se pueden agregar logs adicionales. Un workspace también puede ser abierto para continuar revisando logs y puede ser cerrado cuando sea necesario.
 
 # Adquisición de Logs
 
@@ -28,7 +28,7 @@ TimeCreated, UserID, EventID, Machine, Level, LogName, EventMessage, EventMessag
 
 **TimeCreated:**
 
-La hora en la que se creó el evento, almacenada en UTC. Al procesar los logs, la hora se ajustará a la zona horaria de la máquina local. Ten esto en cuenta y asegúrate de ajustar a la zona horaria correcta extrayéndola del registro. Usa la zona horaria de la evidencia para establecer la hora real. Por conveniencia, podrías, por ejemplo, cambiar la zona horaria de la máquina para que coincida con la de la evidencia durante el procesamiento de los logs.
+La hora en la que se creó el evento, almacenada en UTC. Al procesar los logs, la hora se ajustará a la zona horaria de la máquina local. Tener esto en cuenta y asegurarse de ajustar a la zona horaria correcta extrayéndola del registro y usar la zona horaria de la evidencia para establecer la hora real. Por conveniencia, es posible, por ejemplo, cambiar la zona horaria de la máquina para que coincida con la de la evidencia durante el procesamiento de los logs.
 
 **UserID:**
 
@@ -89,7 +89,7 @@ Muestra los logs según la categoría seleccionada en los Filtros Básicos.
 
 ![Tabla1](https://github.com/gustavoparedes/QuickLog/assets/61228478/a947b4bd-3c81-40ed-a756-6c757dc6609c)
 
-Puedes navegar de celda en celda, y el contenido de cada celda se mostrará en el cuadro de texto a medida que te muevas.
+Puede navegar de celda en celda, y el contenido de cada una se mostrará en el cuadro de texto a medida que se mueve.
 
 Visualización de EventMessage
 
@@ -155,7 +155,7 @@ Verá una ventana con las etiquetas creadas en el Gestor de Etiquetas:
 
 ![AddLabel2](https://github.com/gustavoparedes/QuickLog/assets/61228478/180423b4-7446-4138-a2d9-3e59fd5c3285)
 
-Simplemente seleccione la etiqueta que desea aplicar usando el mismo método de selección que para los logs, y haga clic en "Establecer Etiqueta".
+Simplemente seleccione la etiqueta que desea aplicar usando el mismo método de selección que para los logs, y haga clic en "Set Label".
 
 ![AddLabel3](https://github.com/gustavoparedes/QuickLog/assets/61228478/5713289c-490b-4a14-87bd-5ee8ed76c1f3)
 
@@ -196,7 +196,7 @@ Por ejemplo, podríamos ver todos los logs generados durante la sesión de un us
 
 ![RangoTiempo](https://github.com/gustavoparedes/QuickLog/assets/61228478/6b2ef126-1b13-4fca-9755-74619f9ae6c7)
 
-También puedes crear un filtro de tiempo para un número específico de minutos alrededor del tiempo de un evento. Por ejemplo, si un evento ocurrió a las 14:01:31 y usas la opción "Minutos alrededor" con un minuto, filtrará todos los eventos entre un minuto antes y un minuto después, es decir, entre las 14:00:31 y las 14:02:31.
+También puede crear un filtro de tiempo para un número específico de minutos alrededor del tiempo de un evento. Por ejemplo, si un evento ocurrió a las 14:01:31 y usamos la opción "Minutes Aroud" con un minuto, filtrará todos los eventos entre un minuto antes y un minuto después, es decir, entre las 14:00:31 y las 14:02:31.
 
 # 7. Consola de Logs:
 
@@ -204,7 +204,7 @@ Muestra mensajes de operación.
 
 # 8. Filtros Personalizados:
 
-Permite realizar filtros granulares por cualquiera de los campos en cada log. Recuerda que los filtros básicos solo muestran eventos categorizados. Se pueden crear filtros personalizados básicos que incluyan opciones de búsqueda de texto; este texto se buscará en los campos EventMessage y EventMessageXML.
+Permite realizar filtros granulares por cualquiera de los campos en cada log. Recuerde que los filtros básicos solo muestran eventos categorizados. Se pueden crear filtros personalizados básicos que incluyan opciones de búsqueda de texto; este texto se buscará en los campos EventMessage y EventMessageXML.
 
 ![FiltroPersonalizado](https://github.com/gustavoparedes/QuickLog/assets/61228478/2fc087d0-5a5b-4c53-834c-0ed10be8b9ce)
 
@@ -243,7 +243,7 @@ Lo primero que hay que hacer es crear un workspace.
 
 ![Espacios de Trabajo](https://github.com/gustavoparedes/QuickLog/assets/61228478/1f3b0da8-bea2-4ee2-9b18-7d947ec7f59c)
 
-Después, agrega logs usando la opción "Adquirir Logs" para uno o múltiples archivos o "Procesar Carpeta de Logs" para procesar todos los archivos .evtx dentro de una carpeta. Los logs se almacenarán en la base de datos y se clasificarán según las categorías predefinidas.
+Después, agregar logs usando la opción "Acquire Logs" para uno o múltiples archivos o "Porcess Log Folder" para procesar todos los archivos .evtx dentro de una carpeta. Los logs se almacenarán en la base de datos y se clasificarán según las categorías predefinidas.
 
 Filtros Básicos:
 
