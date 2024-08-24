@@ -5282,7 +5282,7 @@ namespace quickLog
 
 
 
-        private void LogToConsole(string message)
+        internal void LogToConsole(string message)
         {
             string timestampedMessage = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} {message}";
             //string timestampedMessage = $"{DateTime.Now:HH:mm:ss} {message}";
@@ -6677,75 +6677,8 @@ namespace quickLog
                     dbname = saveFileDialog.FileName;
                     this.ConnectionString = $"Data Source={dbname};Version=3;";
                     this.Text = "Quick Log v 0.1 is working on:   " + dbname;
-                    using (SQLiteConnection connection = new SQLiteConnection(ConnectionString))
-
-                    {
-                        connection.Open();
-
-                        string setPragma = "PRAGMA foreign_keys = ON;";
-
-                        string createTableLabels = @"
-                        CREATE TABLE IF NOT EXISTS Labels (
-                        Label_name TEXT PRIMARY KEY NOT NULL,
-                        Label_color TEXT
-                        )";
-
-
-                        string createTableQuery = @"
-                        CREATE TABLE IF NOT EXISTS LogData (
-                        Log_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        TimeCreated DATETIME, 
-                        UserID TEXT,
-                        EventID INTEGER,
-                        MachineName TEXT,
-                        Level INTEGER,
-                        LogName TEXT,
-                        EventMessage TEXT,
-                        EventMessageXml TEXT,                        
-                        ActivityID  TEXT,
-                        Label    TEXT,
-                        Comment TEXT,                      
-                        FOREIGN KEY (Label) REFERENCES Labels(Label_name)
-                        )";
-
-                        //Crear tabla de resultados para guardar resultados y no calccular cada vez que se abre
-
-                        string createTableResults = @"
-                        CREATE TABLE IF NOT EXISTS Results (
-                        Result TEXT PRIMARY KEY NOT NULL,
-                        Result_Value INTEGER
-                        )";
-
-
-
-                        using (SQLiteCommand command = new SQLiteCommand(setPragma, connection))
-                        {
-                            command.ExecuteNonQuery();
-                            LogToConsole("Pragma On Ok.");
-                        }
-
-                        using (SQLiteCommand command = new SQLiteCommand(createTableLabels, connection))
-                        {
-                            command.ExecuteNonQuery();
-                            LogToConsole("Table created Ok.");
-                        }
-
-
-                        using (SQLiteCommand command = new SQLiteCommand(createTableQuery, connection))
-                        {
-                            command.ExecuteNonQuery();
-                            LogToConsole("Table created Ok.");
-                        }
-
-                        using (SQLiteCommand command = new SQLiteCommand(createTableResults, connection))
-                        {
-                            command.ExecuteNonQuery();
-                            LogToConsole("Table created Ok.");
-                        }
-
-                        connection.Close();
-
-                    }
+                    var helper = new SqlHelper(new FormOneConsoleLogger(this));
+                    helper.CreateDatabase(ConnectionString);
                     LogToConsole($"Workspace {dbname} created.");
                     enable_buttons();
                     label_status.Text = "Add logs using the acquire logs button or drag and drop";
