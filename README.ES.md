@@ -5,7 +5,7 @@
 
 # Descargar version compilada
 
-Puede descargarla [aqui](https://github.com/gustavoparedes/QuickLog/releases/download/v0.1/Compiled.Version.QuickLog.v0.1.rar) 
+Puede descargarla [aqui](https://github.com/gustavoparedes/QuickLog/releases/download/v0.1/QuickLog.rar) 
 
 
 
