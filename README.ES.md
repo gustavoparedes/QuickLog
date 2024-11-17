@@ -1,6 +1,6 @@
 # QuickLog
 
-![Finish2](https://github.com/gustavoparedes/QuickLog/assets/61228478/f7091152-5b05-4850-98f9-8847c100333c)
+![Quicklog1](https://github.com/user-attachments/assets/1c0b114c-2108-411d-b040-10b754899a46)
 
 
 # Descargar version compilada
