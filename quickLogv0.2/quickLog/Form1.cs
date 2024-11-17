@@ -145,7 +145,7 @@ namespace quickLog
          Terminal_Server_Session_Reconnection, Terminal_Server_Session_Disconnected_Code, Terminal_Server_Session_Disconnected_by_Session, Terminal_Server;
 
 
-        // Definir un ˙nico StreamWriter para mantener el archivo de log abierto durante toda la ejecuciÛn
+        // Definir un √∫nico StreamWriter para mantener el archivo de log abierto durante toda la ejecuci√≥n
         private static StreamWriter logWriter;
 
         string logFilePath;
@@ -153,7 +153,7 @@ namespace quickLog
 
         public FormMain()
         {
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NBaF5cXmpCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdnWXtfdHZUQ2FfVUFxXEU=");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Put your license here");
 
             InitializeComponent();
 
@@ -347,7 +347,7 @@ namespace quickLog
             toolTip_sfComboBox_UserID.ReshowDelay = 500;
             toolTip_sfComboBox_UserID.ShowAlways = true;
 
-            // Establece el texto del tooltip para el botÛn
+            // Establece el texto del tooltip para el bot√≥n
             toolTip_sfComboBox_UserID.SetToolTip(this.sfComboBox_UserID, "All users in the logs");
 
             // Crear el ToolTip
@@ -359,7 +359,7 @@ namespace quickLog
             toolTip_sfComboBox_EventID.ReshowDelay = 500;
             toolTip_sfComboBox_EventID.ShowAlways = true;
 
-            // Establece el texto del tooltip para el botÛn
+            // Establece el texto del tooltip para el bot√≥n
             toolTip_sfComboBox_EventID.SetToolTip(this.sfComboBox_EventID, "All existing events in the logs");
 
 
@@ -373,7 +373,7 @@ namespace quickLog
             toolTip_sfComboBox_MachineName.ReshowDelay = 500;
             toolTip_sfComboBox_MachineName.ShowAlways = true;
 
-            // Establece el texto del tooltip para el botÛn
+            // Establece el texto del tooltip para el bot√≥n
             toolTip_sfComboBox_MachineName.SetToolTip(this.sfComboBox_MachineName, "All existing machine names in the logs");
 
 
@@ -387,7 +387,7 @@ namespace quickLog
             toolTip_sfComboBox_Level.ReshowDelay = 500;
             toolTip_sfComboBox_Level.ShowAlways = true;
 
-            // Establece el texto del tooltip para el botÛn
+            // Establece el texto del tooltip para el bot√≥n
             toolTip_sfComboBox_Level.SetToolTip(this.sfComboBox_Level, "Event level represents the severity of the recorded event log");
 
 
@@ -402,7 +402,7 @@ namespace quickLog
             toolTip_sfComboBox_LogName.ReshowDelay = 500;
             toolTip_sfComboBox_LogName.ShowAlways = true;
 
-            // Establece el texto del tooltip para el botÛn
+            // Establece el texto del tooltip para el bot√≥n
             toolTip_sfComboBox_LogName.SetToolTip(this.sfComboBox_LogName, "Names of log files containing records");
 
 
@@ -419,7 +419,7 @@ namespace quickLog
         //Formatear la columna de tiempo con formato 24 hrs minutos y segundos
         private void DataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            // Aseg˙rate de que est·s formateando la columna correcta
+            // Aseg√∫rate de que est√°s formateando la columna correcta
             if (dataGridView1.Columns[e.ColumnIndex].Name == "TimeCreated" && e.Value is DateTime)
             {
                 
@@ -468,7 +468,7 @@ namespace quickLog
                     string columnName = cell.OwningColumn.HeaderText;
                     string cellValue = cell.Value?.ToString() ?? "N/A";
 
-                    // Aplicar estilo al tÌtulo (columna)
+                    // Aplicar estilo al t√≠tulo (columna)
                     richTextBox_Detail.SelectionFont = new Font(richTextBox_Detail.Font, FontStyle.Bold);
                     richTextBox_Detail.SelectionColor = Color.Blue;
                     richTextBox_Detail.AppendText($"{columnName}:\n");
@@ -478,7 +478,7 @@ namespace quickLog
                     richTextBox_Detail.SelectionColor = Color.Black;
                     richTextBox_Detail.AppendText($"{cellValue}\n");
 
-                    // LÌnea en blanco despuÈs de cada par tÌtulo/campo
+                    // L√≠nea en blanco despu√©s de cada par t√≠tulo/campo
                     richTextBox_Detail.AppendText("\n");
                 }
             }
@@ -528,7 +528,7 @@ namespace quickLog
                 
                 bool hasColumn = false;
 
-                // Iterar a travÈs de las columnas del DataGridView y verificar que si tiene la columna label.
+                // Iterar a trav√©s de las columnas del DataGridView y verificar que si tiene la columna label.
                 foreach (DataGridViewColumn columna in dataGridView1.Columns)
                 {
                     if (columna.Name == "Label")
@@ -1219,7 +1219,7 @@ namespace quickLog
 
             ShowQueryOnDataGridView(query);
 
-            label_status.Text = "A user attempted to change an accountís password. " + " ( " + HitNumber.ToString() + " search hits" + " ) ";
+            label_status.Text = "A user attempted to change an account¬ís password. " + " ( " + HitNumber.ToString() + " search hits" + " ) ";
         }
 
 
@@ -1231,7 +1231,7 @@ namespace quickLog
 
             ShowQueryOnDataGridView(query);
 
-            label_status.Text = "An attempt was made to reset an accountís password. " + " ( " + HitNumber.ToString() + " search hits" + " ) ";
+            label_status.Text = "An attempt was made to reset an account¬ís password. " + " ( " + HitNumber.ToString() + " search hits" + " ) ";
         }
 
         private void UserAccountDisabled()
@@ -2228,7 +2228,7 @@ namespace quickLog
 
             ShowQueryOnDataGridView(query);
 
-            label_status.Text = "Process Access (opening access to another processís memory space).     " + " ( " + HitNumber.ToString() + " search hits" + " ) ";
+            label_status.Text = "Process Access (opening access to another process¬ís memory space).     " + " ( " + HitNumber.ToString() + " search hits" + " ) ";
 
         }
 
@@ -5372,7 +5372,7 @@ namespace quickLog
             }
         }
 
-        // FunciÛn para cerrar el archivo de log cuando termine todo el procesamiento
+        // Funci√≥n para cerrar el archivo de log cuando termine todo el procesamiento
         public static void CloseLog()
         {
             if (logWriter != null)
@@ -5408,12 +5408,12 @@ namespace quickLog
         //            Thread.Sleep(50);
         //        }
         //    }
-        //    catch (IOException ex) // Manejar especÌficamente IOException por bloqueo de archivo u otros problemas de E/S
+        //    catch (IOException ex) // Manejar espec√≠ficamente IOException por bloqueo de archivo u otros problemas de E/S
         //    {
         //        MessageBox.Show($"Error writing to the log file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //        // Intentar una estrategia de recuperaciÛn si es necesario
+        //        // Intentar una estrategia de recuperaci√≥n si es necesario
         //    }
-        //    catch (Exception ex) // Manejar cualquier otro tipo de excepciÛn
+        //    catch (Exception ex) // Manejar cualquier otro tipo de excepci√≥n
         //    {
         //        MessageBox.Show($"Error writing to the log file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         //    }
@@ -5490,7 +5490,7 @@ namespace quickLog
 
                                 using (entry)
                                 {
-                                    // Obtener informaciÛn del evento
+                                    // Obtener informaci√≥n del evento
                                     cnt += 1;
                                     cnt2 += 1;
 
@@ -5714,14 +5714,14 @@ namespace quickLog
                                     //Prueba de guardar fecha / hora en utc, no funciono
                                     //DateTime time = (entry.TimeCreated ?? DateTime.MinValue).ToUniversalTime();
 
-                                    // ObtÈn el tiempo desde TimeCreated
+                                    // Obt√©n el tiempo desde TimeCreated
                                     DateTime time = entry.TimeCreated ?? DateTime.MinValue;
 
                                     // Extrae el tiempo UTC directamente desde el XML si existe
                                     string messageXML = entry.ToXml();
                                     DateTime xmlTime = ExtractTimeFromXml(messageXML);
 
-                                    // Utiliza xmlTime si est· presente, de lo contrario usa time
+                                    // Utiliza xmlTime si est√° presente, de lo contrario usa time
                                     DateTime finalTime = xmlTime != DateTime.MinValue ? xmlTime : time;
 
 
@@ -5823,7 +5823,7 @@ namespace quickLog
                 // Manejo de errores si hay problemas al analizar el XML
             }
 
-            // Retorna un valor mÌnimo si no se pudo extraer el tiempo
+            // Retorna un valor m√≠nimo si no se pudo extraer el tiempo
             return DateTime.MinValue;
         }
 
@@ -5945,17 +5945,17 @@ namespace quickLog
             sql_query = "select * from LogData WHERE EventID is 4723;";
             User_chg_pass = Query_count(sql_query);
             save_query_count("User_chg_pass", User_chg_pass);
-            LogToConsole("A user attempted to change an accountís password. " + User_chg_pass.ToString());
+            LogToConsole("A user attempted to change an account¬ís password. " + User_chg_pass.ToString());
 
             sql_query = "select * from LogData WHERE EventID is 4724;";
             User_reset_pass = Query_count(sql_query);
             save_query_count("User_reset_pass", User_reset_pass);
-            LogToConsole("An attempt was made to reset an accountís password.  " + User_reset_pass.ToString());
+            LogToConsole("An attempt was made to reset an account¬ís password.  " + User_reset_pass.ToString());
 
             sql_query = "select * from LogData WHERE EventID is 4725;";
             User_was_disabled = Query_count(sql_query);
             save_query_count("User_was_disabled", User_was_disabled);
-            LogToConsole("An attempt was made to reset an accountís password.  " + User_was_disabled.ToString());
+            LogToConsole("An attempt was made to reset an account¬ís password.  " + User_was_disabled.ToString());
 
             sql_query = "select * from LogData WHERE EventID is 4726;";
             User_was_deleted = Query_count(sql_query);
@@ -6517,7 +6517,7 @@ namespace quickLog
             sql_query = "select * from LogData WHERE EventID is 10 AND LogName is \"Microsoft-Windows-Sysmon/Operational\";";
             Process_Access = Query_count(sql_query);
             save_query_count("Process_Access", Process_Access);
-            LogToConsole("ProcessAccess (opening access to another processís memory space).  " + Process_Access.ToString());
+            LogToConsole("ProcessAccess (opening access to another process¬ís memory space).  " + Process_Access.ToString());
 
             sql_query = "select * from LogData WHERE EventID is 11 AND LogName is \"Microsoft-Windows-Sysmon/Operational\";";
             File_Create = Query_count(sql_query);
@@ -6792,7 +6792,7 @@ namespace quickLog
                 saveFileDialog.Title = "Create Project";
                 saveFileDialog.FileName = "Default.qlog"; // Nombre predeterminado del archivo
 
-                // Mostrar el cuadro de di·logo y obtener el resultado
+                // Mostrar el cuadro de di√°logo y obtener el resultado
                 DialogResult result = saveFileDialog.ShowDialog();
 
                 if (result == DialogResult.OK)
@@ -6813,7 +6813,7 @@ namespace quickLog
                     
                     if (logWriter == null)
                     {
-                        logWriter = new StreamWriter(logFilePath, append: true); // true para aÒadir al log si ya existe
+                        logWriter = new StreamWriter(logFilePath, append: true); // true para a√±adir al log si ya existe
                     }
 
                     this.ConnectionString = $"Data Source={dbname};Version=3;";
@@ -6928,7 +6928,7 @@ namespace quickLog
                     //logFilePath = $"{dbname}.log";
                     try
                     {
-                        if (logWriter == null) // Inicializa solo si a˙n no est· inicializado
+                        if (logWriter == null) // Inicializa solo si a√∫n no est√° inicializado
                         {
                             logWriter = new StreamWriter(logFilePath, append: true);
                         }
@@ -7658,7 +7658,7 @@ namespace quickLog
 
         private void UpdatetoolStripProgressBar()
         {
-            // Usamos el control padre del ToolStripProgressBar para verificar si se requiere la invocaciÛn
+            // Usamos el control padre del ToolStripProgressBar para verificar si se requiere la invocaci√≥n
             if (statusStrip1.InvokeRequired)
             {
                 statusStrip1.Invoke(new Action(UpdatetoolStripProgressBar));
@@ -8223,7 +8223,7 @@ namespace quickLog
 
             if (OpenForm != null)
             {
-                OpenForm.BringToFront();  // Si se encuentra, tr·elo al frente
+                OpenForm.BringToFront();  // Si se encuentra, tr√°elo al frente
             }
             else
             {
@@ -8232,7 +8232,7 @@ namespace quickLog
 
                 bool hasColumn = false;
 
-                // Iterar a travÈs de las columnas del DataGridView y verificar que si tiene la columna label ,se reventaba en viewd users por esto.
+                // Iterar a trav√©s de las columnas del DataGridView y verificar que si tiene la columna label ,se reventaba en viewd users por esto.
                 foreach (DataGridViewColumn columna in dataGridView1.Columns)
                 {
                     if (columna.Name == "Label")
@@ -8283,7 +8283,7 @@ namespace quickLog
 
             if (OpenForm != null)
             {
-                OpenForm.BringToFront();  // Si se encuentra, tr·elo al frente
+                OpenForm.BringToFront();  // Si se encuentra, tr√°elo al frente
             }
             else
             {
@@ -8291,7 +8291,7 @@ namespace quickLog
                 Form_Label.Show();
                 Form_Label.FormClosed += (sender, e) =>
                 {
-                    // Esta funciÛn se ejecutar· cuando el formulario se cierre
+                    // Esta funci√≥n se ejecutar√° cuando el formulario se cierre
                     Update_sfComboBox_Label();
                     PaintGridView();
                 };
@@ -8314,7 +8314,7 @@ namespace quickLog
 
             if (OpenForm != null)
             {
-                OpenForm.BringToFront();  // Si se encuentra, tr·elo al frente
+                OpenForm.BringToFront();  // Si se encuentra, tr√°elo al frente
             }
             else
             {
@@ -8325,7 +8325,7 @@ namespace quickLog
 
                 bool hasColumn = false;
 
-                // Iterar a travÈs de las columnas del DataGridView y verificar que si tiene la columna label ,se reventaba en viewd users por esto.
+                // Iterar a trav√©s de las columnas del DataGridView y verificar que si tiene la columna label ,se reventaba en viewd users por esto.
                 foreach (DataGridViewColumn columna in dataGridView1.Columns)
                 {
                     if (columna.Name == "Label")
@@ -8364,7 +8364,7 @@ namespace quickLog
                         Form_SetLabel Form_sLabel = new Form_SetLabel(ConnectionString, LogsIdList, selectedRows);
                         Form_sLabel.FormClosed += (sender, e) =>
                         {
-                            // Esta funciÛn se ejecutar· cuando el formulario se cierre
+                            // Esta funci√≥n se ejecutar√° cuando el formulario se cierre
                             Update_sfComboBox_Label();
                         };
 
@@ -8400,7 +8400,7 @@ namespace quickLog
 
             bool hasColumn = false;
 
-            // Iterar a travÈs de las columnas del DataGridView y verificar que si tiene la columna label ,se reventaba en viewd users por esto.
+            // Iterar a trav√©s de las columnas del DataGridView y verificar que si tiene la columna label ,se reventaba en viewd users por esto.
             foreach (DataGridViewColumn columna in dataGridView1.Columns)
             {
                 if (columna.Name == "Label")
@@ -8495,7 +8495,7 @@ namespace quickLog
 
             bool hasColumn = false;
 
-            // Iterar a travÈs de las columnas del DataGridView y verificar que si tiene la columna label ,se reventaba en viewd users por esto.
+            // Iterar a trav√©s de las columnas del DataGridView y verificar que si tiene la columna label ,se reventaba en viewd users por esto.
             foreach (DataGridViewColumn columna in dataGridView1.Columns)
             {
                 if (columna.Name == "TimeCreated")
@@ -8515,7 +8515,7 @@ namespace quickLog
 
             if (dataGridView1.SelectedRows.Count == 2 && hasColumn == true)
             {
-                // ObtÈn los Ìndices de las filas seleccionadas
+                // Obt√©n los √≠ndices de las filas seleccionadas
 
                 start = DateTime.Parse(dataGridView1.SelectedRows[0].Cells["Timecreated"].Value.ToString());
                 end = DateTime.Parse(dataGridView1.SelectedRows[1].Cells["Timecreated"].Value.ToString());
@@ -8547,9 +8547,9 @@ namespace quickLog
                     label_status.Text = "Time Rage Filter " + " ( " + HitNumber.ToString() + " search hits" + " ) ";
                 }
 
-                // Muestra los Ìndices de las filas seleccionadas
-                //MessageBox.Show("Õndices de las filas seleccionadas: " + index1 + " y " + index2 + "y los timepos fueron " + tmp2 + " y " +  tmp3);
-                //textBox2.Text = "Õndices de las filas seleccionadas: " + index1 + " y " + index2 + "y los timepos fueron " + tmp2 + " y " + tmp3;
+                // Muestra los √≠ndices de las filas seleccionadas
+                //MessageBox.Show("√çndices de las filas seleccionadas: " + index1 + " y " + index2 + "y los timepos fueron " + tmp2 + " y " +  tmp3);
+                //textBox2.Text = "√çndices de las filas seleccionadas: " + index1 + " y " + index2 + "y los timepos fueron " + tmp2 + " y " + tmp3;
             }
             else
             {
@@ -8591,7 +8591,7 @@ namespace quickLog
                         groupBox_Main.Enabled = false; 
                         groupBox_CustomSearch.Enabled = false;
 
-                        // Usar Task.Run para ejecutar la lÛgica pesada en un hilo en segundo plano
+                        // Usar Task.Run para ejecutar la l√≥gica pesada en un hilo en segundo plano
 
                         await Task.Run(() => GeneratePdf(filename));
                         
@@ -8613,14 +8613,14 @@ namespace quickLog
 
 private void GeneratePdf(string filename)
 {
-    // Crear el documento con m·rgenes
+    // Crear el documento con m√°rgenes
     Document document = new Document(PageSize.A4, 50, 50, 50, 50);
 
     using (FileStream fileStream = new FileStream(filename, FileMode.Create))
     {
         PdfWriter writer = PdfWriter.GetInstance(document, fileStream);
 
-        // Asignar la clase FooterHandler para manejar el pie de p·gina
+        // Asignar la clase FooterHandler para manejar el pie de p√°gina
         writer.PageEvent = new Helpers.FooterHandler();
 
         // Abrir el documento para escribir
@@ -8631,10 +8631,10 @@ private void GeneratePdf(string filename)
         {
             if (!row.IsNewRow)
             {
-                // Recorrer todas las columnas din·micamente
+                // Recorrer todas las columnas din√°micamente
                 foreach (DataGridViewCell cell in row.Cells)
                 {
-                    // Agregar el tÌtulo de la subsecciÛn (encabezado de columna)
+                    // Agregar el t√≠tulo de la subsecci√≥n (encabezado de columna)
                     string headerText = dataGridView1.Columns[cell.ColumnIndex].HeaderText + ":";
                     Paragraph header = new Paragraph(headerText, FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12))
                     {
@@ -8649,7 +8649,7 @@ private void GeneratePdf(string filename)
                     document.Add(content);
                 }
 
-                // Iniciar una nueva p·gina despuÈs de cada fila
+                // Iniciar una nueva p√°gina despu√©s de cada fila
                 document.NewPage();
             }
         }
@@ -8665,7 +8665,7 @@ private void GeneratePdf(string filename)
 
             bool hasColumn = false;
 
-            // Iterar a travÈs de las columnas del DataGridView y verificar que si tiene la columna label ,se reventaba en viewd users por esto.
+            // Iterar a trav√©s de las columnas del DataGridView y verificar que si tiene la columna label ,se reventaba en viewd users por esto.
             foreach (DataGridViewColumn columna in dataGridView1.Columns)
             {
                 if (columna.Name == "TimeCreated")
@@ -8687,7 +8687,7 @@ private void GeneratePdf(string filename)
 
             if (dataGridView1.SelectedRows.Count == 1 && hasColumn == true)
             {
-                // ObtÈn los Ìndices de las filas seleccionadas
+                // Obt√©n los √≠ndices de las filas seleccionadas
 
                 tmp = DateTime.Parse(dataGridView1.SelectedRows[0].Cells["Timecreated"].Value.ToString());
                 start = tmp.AddMinutes(-aroundtime);
@@ -8771,7 +8771,7 @@ private void GeneratePdf(string filename)
         {
             //aaaaa
             
-                // Establece la ubicaciÛn del archivo CSV de salida
+                // Establece la ubicaci√≥n del archivo CSV de salida
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
                 saveFileDialog.Filter = "Save to CSV |*.csv";
                 saveFileDialog.Title = "Save as CSV";
@@ -8803,7 +8803,7 @@ private void GeneratePdf(string filename)
                                                         .Select(cell => "\"" + cell.Value?.ToString() + "\"")
                                                         .ToArray();
 
-                                    string line = string.Join(",", cells);
+                                    string line = string.Join("***", cells);
                                     file.WriteLine(line);
                                 }
                             }
@@ -8830,12 +8830,12 @@ private void GeneratePdf(string filename)
             if (dataGridView1.AutoSizeColumnsMode == DataGridViewAutoSizeColumnsMode.Fill)
             {
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-                Btn_GridFill.Text = "Off";  // Cambiar el texto del botÛn a "Off"
+                Btn_GridFill.Text = "Off";  // Cambiar el texto del bot√≥n a "Off"
             }
             else
             {
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                Btn_GridFill.Text = "On";  // Cambiar el texto del botÛn a "On"
+                Btn_GridFill.Text = "On";  // Cambiar el texto del bot√≥n a "On"
             }
 
         }
@@ -8847,12 +8847,12 @@ private void GeneratePdf(string filename)
             if (dataGridView1.ShowCellToolTips)
             {
                 dataGridView1.ShowCellToolTips = false;
-                btn_ShowCellToolTips.Text = "Off";  // Cambiar el texto del botÛn a "Tooltips Off"
+                btn_ShowCellToolTips.Text = "Off";  // Cambiar el texto del bot√≥n a "Tooltips Off"
             }
             else
             {
                 dataGridView1.ShowCellToolTips = true;
-                btn_ShowCellToolTips.Text = "On";  // Cambiar el texto del botÛn a "Tooltips On"
+                btn_ShowCellToolTips.Text = "On";  // Cambiar el texto del bot√≥n a "Tooltips On"
             }
 
 
@@ -8873,11 +8873,11 @@ private void GeneratePdf(string filename)
 
             if (OpenForm != null)
             {
-                OpenForm.BringToFront();  // Si se encuentra, tr·elo al frente
+                OpenForm.BringToFront();  // Si se encuentra, tr√°elo al frente
             }
             else
             {
-                // Si no, crea una nueva instancia y muÈstrala
+                // Si no, crea una nueva instancia y mu√©strala
 
                 About_Form Form_about = new About_Form();
                 Form_about.Show();
