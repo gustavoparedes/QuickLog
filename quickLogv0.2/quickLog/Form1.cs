@@ -10,10 +10,7 @@ using Document = iTextSharp.text.Document;
 using System.Text.RegularExpressions;
 
 
-//La sgte linea se agrgo sola al tratar de poner en modo fill el datagrd programaticamente me genero errores en los lables de los menus en todos, ams de 100
-//using System.Windows.Forms.VisualStyles;
-// Ese error se arreglo usando la sgte linE, como no use ninguno pero los dejo comentados por si sucediera otra vez el error
-//using ContentAlignment = System.Drawing.ContentAlignment;
+
 
 namespace quickLog
 {
