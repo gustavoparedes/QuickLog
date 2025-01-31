@@ -28,7 +28,10 @@ TimeCreated, UserID, EventID, Machine, Level, LogName, EventMessage, EventMessag
 
 **TimeCreated:**
 
-La hora en la que se creó el evento, almacenada en UTC. Al procesar los logs, la hora se ajustará a la zona horaria de la máquina local. Tener esto en cuenta y asegurarse de ajustar a la zona horaria correcta extrayéndola del registro y usar la zona horaria de la evidencia para establecer la hora real. Por conveniencia, es posible, por ejemplo, cambiar la zona horaria de la máquina para que coincida con la de la evidencia durante el procesamiento de los logs.
+La hora en la que se creó el evento, almacenada en UTC. Asegurarse de ajustar a la zona horaria correcta extrayéndola del registro y usar la zona horaria de la evidencia para establecer la hora real.
+
+![UTC](https://github.com/user-attachments/assets/b9e54019-1823-4a36-9c11-52c2e9e84b50)
+
 
 **UserID:**
 
