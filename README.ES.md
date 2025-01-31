@@ -28,7 +28,7 @@ TimeCreated, UserID, EventID, Machine, Level, LogName, EventMessage, EventMessag
 
 **TimeCreated:**
 
-La hora en la que se creó el evento, almacenada en UTC. Asegurarse de ajustar a la zona horaria correcta extrayéndola del registro y usar la zona horaria de la evidencia para establecer la hora real.
+La hora en la que se creó el evento, almacenada en UTC, por lo cual se debe ajustar a la zona horaria correcta extrayéndola del registro y usar la zona horaria de la evidencia para establecer la hora real.
 
 ![UTC](https://github.com/user-attachments/assets/b9e54019-1823-4a36-9c11-52c2e9e84b50)
 
@@ -88,25 +88,18 @@ A partir del cuarto elemento, los eventos se categorizan en áreas de interés b
 
 # 2. Tabla de Logs:
 
-Muestra los logs según la categoría seleccionada en los Filtros Básicos.
+Muestra los logs según la categoría seleccionada en los Filtros Básicos. 
+Al dar click sobre cualquier fila la informacion completa se mostrara en el cuadro de texto de la derecha
 
-![Tabla1](https://github.com/gustavoparedes/QuickLog/assets/61228478/a947b4bd-3c81-40ed-a756-6c757dc6609c)
+![Tabladelogs](https://github.com/user-attachments/assets/4b7abb4a-6307-4dba-8e17-9659b94b655c)
 
-Puede navegar de celda en celda, y el contenido de cada una se mostrará en el cuadro de texto a medida que se mueve.
-
-Visualización de EventMessage
-
-![Tabla2](https://github.com/gustavoparedes/QuickLog/assets/61228478/1f31e4f9-57f0-4b17-9d04-e6314e40a9b7)
-
-Visualización de EventMessageXML
-
-![Tabla3](https://github.com/gustavoparedes/QuickLog/assets/61228478/d7a79259-4931-4b17-8dc9-5376a5c565ba)
 
 # 3. Cuadro de Texto:
 
-Muestra el contenido de la celda seleccionada usando las flechas del teclado o el mouse. Permite ver los resultados de búsqueda resaltados y leer cómodamente el contenido de los logs.
+Muestra el contenido de la fila seleccionada y permite ver los resultados de búsqueda resaltados y leer cómodamente el contenido de los logs.
 
-![Tabla4](https://github.com/gustavoparedes/QuickLog/assets/61228478/873c2d83-3b91-4a2e-8d88-00061a5e8c5d)
+![CuadrodeTexto](https://github.com/user-attachments/assets/2e0caeec-8cf9-4f03-b09e-c02585e821f6)
+
 
 # 4. Etiquetas y Comentarios:
 
@@ -209,7 +202,8 @@ Muestra mensajes de operación.
 
 Permite realizar filtros granulares por cualquiera de los campos en cada log. Recuerde que los filtros básicos solo muestran eventos categorizados. Se pueden crear filtros personalizados básicos que incluyan opciones de búsqueda de texto; este texto se buscará en los campos EventMessage y EventMessageXML.
 
-![FiltroPersonalizado](https://github.com/gustavoparedes/QuickLog/assets/61228478/2fc087d0-5a5b-4c53-834c-0ed10be8b9ce)
+![Filter](https://github.com/user-attachments/assets/0d71436b-2063-4d37-9e60-6d30f82a0b64)
+
 
 Los filtros se pueden aplicar a todos los campos de los logs. La lógica de búsqueda entre diferentes campos es una operación AND, lo que significa que el filtro se aplica de la siguiente manera:
 
