@@ -1,6 +1,8 @@
 
 # QuickLog
-![Quicklog1](https://github.com/user-attachments/assets/1c0b114c-2108-411d-b040-10b754899a46)
+
+![1](https://github.com/user-attachments/assets/2e0cef5a-84c7-4e21-a0e5-d9ef05678238)
+
 
 
 
