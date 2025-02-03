@@ -4,7 +4,7 @@
 
 # Download Compiled Version
 
-You can download it [here](https://github.com/gustavoparedes/QuickLog/releases/download/v0.2/QuickLogv0.2.rar)
+You can download it [here](https://github.com/gustavoparedes/QuickLog/releases/download/v0.3/QuickLogv0.3.rar)
 
 **Quick Log** is a simple tool to visualize Windows logs in EVTX format, organized according to this work:
 https://cybersecuritynews.com/windows-event-log-analysis/ and designed for digital forensics courses using open-source tools, taught at Internet Solutions S.A.S, Bogotá, Colombia. It requires Windows 10 64-bit and a resolution of 1920x1080.
