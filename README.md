@@ -92,62 +92,211 @@ Displays the content of the selected row, allows search results to be highlighte
 
 ![Text Box](https://github.com/user-attachments/assets/2e0caeec-8cf9-4f03-b09e-c02585e821f6)
 
-# 4. Tags and Comments:
+# 4. Labels and Comments:
 
-Options to create, delete, and assign tags, as well as to create, update, and delete comments.
+Options to create, delete, and assign labels, as well as to create, update, and delete comments.
 
 ![Labels and comments](https://github.com/gustavoparedes/QuickLog/assets/61228478/d3ef32fc-600c-42f7-81a3-238cf8f2a3ab)
 
-# 5. Save to:
+Before you can use labels, you must create them using the Label Manager.
 
-Options to export the logs currently displayed in the log table to PDF or CSV.
+![Label Manager1](https://github.com/gustavoparedes/QuickLog/assets/61228478/14312224-cf85-46ad-96b8-c46a94a199a6)
 
-![Save](https://github.com/gustavoparedes/QuickLog/assets/61228478/48892f2d-f599-4d7f-b28f-b57f8b738148)
+Now, simply click on the blank cell in the "Name" column.
 
-# 6. Time Filters:
+![Label Manager2](https://github.com/gustavoparedes/QuickLog/assets/61228478/91fa5f2e-2f75-4e07-a10a-ad88d930a84b)
 
-Allows filtering based on two timestamps, taking the earliest as the lower bound and the latest as the upper bound.
+Select a color in the "Color" column.
 
-![Time Filters](https://github.com/gustavoparedes/QuickLog/assets/61228478/a99c0939-c0e4-4b64-968d-9ec532fdb755)
+![Label Manager3](https://github.com/gustavoparedes/QuickLog/assets/61228478/ad6d52b5-6646-433e-ae1a-2e9ed5f3ac5d)
 
-# 7. Log Console:
+And then click "Save".
 
-Displays operational messages.
+![Label Manager4](https://github.com/gustavoparedes/QuickLog/assets/61228478/413ac50f-c6ef-42d3-98ea-47426081559e)
 
-# 8. Custom Filters:
+![Label Manager5](https://github.com/gustavoparedes/QuickLog/assets/61228478/45f6f4f7-f117-4afd-89ed-a5d5e16ab8f9)
 
-Allows granular filtering based on any log field.
+Now you can close the Label Manager window and return to it whenever you need to create or delete labels.
 
-![Custom Filters](https://github.com/user-attachments/assets/0d71436b-2063-4d37-9e60-6d30f82a0b64)
+To apply labels, you must select the log or logs to which you want to apply the label.
 
-# 9. Progress Bar:
+## Selecting Logs:
 
-Shows the progress of logs being loaded into the database and processed.
+Just click on each row or log to select it. Use the Ctrl or Shift keys to select multiple logs at once, just like in Windows Explorer.
 
-![Processing](https://github.com/gustavoparedes/QuickLog/assets/61228478/91ecb5a7-3a78-42ce-b0f3-be907d4bfb8a)
+![Selecting Logs](https://github.com/user-attachments/assets/73180d75-88f5-4c2a-b7f7-15c673005143)
 
-# Workflow:
+Select multiple logs in a row by holding Shift.
 
-The general process consists of acquiring and categorizing logs, applying tags and comments, and creating a timeline of relevant events.
+![SelectLog3](https://github.com/gustavoparedes/QuickLog/assets/61228478/0a7a3aef-77d3-49f4-a839-53ecf249c830)
 
-![Timeline](https://github.com/gustavoparedes/QuickLog/assets/61228478/d68134d1-a69a-4c2c-95ba-ceae46f6b200)
+Or by holding the Ctrl key, just like in Windows Explorer.
+
+![SelectLog4](https://github.com/gustavoparedes/QuickLog/assets/61228478/9dec77e6-9a73-424c-b035-0100afbb4e96)
+
+Now that you have selected the log or logs, simply click on **"Add Label"**.
+
+![AddLabel1](https://github.com/gustavoparedes/QuickLog/assets/61228478/e89efebd-fe3f-4bf3-a5de-6b4cdcf83754)
+
+You will see a window with the labels created in the Label Manager:
+
+![AddLabel2](https://github.com/gustavoparedes/QuickLog/assets/61228478/180423b4-7446-4138-a2d9-3e59fd5c3285)
+
+Simply select the label you want to apply using the same selection method as for the logs, and click **"Set Label"**.
+
+![AddLabel3](https://github.com/gustavoparedes/QuickLog/assets/61228478/5713289c-490b-4a14-87bd-5ee8ed76c1f3)
+
+Once the label is applied, it will look like this:
+
+![AddLabel4](https://github.com/gustavoparedes/QuickLog/assets/61228478/5a2a1277-7a69-47e5-a043-dddb61c0306f)
+
+## Adding Comments:
+
+To add comments, select the log (only one) you want to add a comment to and click **"Add Comment"**.
+
+![AddComment1](https://github.com/gustavoparedes/QuickLog/assets/61228478/544c6fc3-3b08-4d52-ba26-446e8d59121b)
+
+Use the text box to enter the comment you need.
+
+![AddComment2](https://github.com/gustavoparedes/QuickLog/assets/61228478/572b1821-6085-4732-8976-e668fddca600)
+
+Make sure to click **"Save Comment"**.
+
+![AddComment3](https://github.com/gustavoparedes/QuickLog/assets/61228478/8755c012-9ecd-4e73-9a06-b322c48bd8c1)
+
+![AddComment4](https://github.com/gustavoparedes/QuickLog/assets/61228478/72516cb0-3fde-48a9-aa8b-e70dbaff7b28)
 
 
-The first step is to create a workspace.
 
-# Create / Open / Close a Workspace:
+## 5. Save To:
 
-![Workspace](https://github.com/gustavoparedes/QuickLog/assets/61228478/1f3b0da8-bea2-4ee2-9b18-7d947ec7f59c)
+Options to export the logs currently displayed in the log table to **PDF** or **CSV**.
 
-Then, add logs using the "Acquire Logs" option for one or multiple files or "Process Log Folder" to process all .evtx files within a folder. The logs will be stored in the database and categorized according to predefined categories.
+![SaveTo](https://github.com/gustavoparedes/QuickLog/assets/61228478/48892f2d-f599-4d7f-b28f-b57f8b738148)
 
-Basic Filters:
+Keep in mind that a **comma-separated file (CSV)** may cause issues when importing it into tools like **LibreOffice** or **Excel**. This is because the fields **EventMessage** and **EventMessageXML** may contain commas, which can lead to incorrect field separation.
+
+![Comma Separation Issue](https://github.com/user-attachments/assets/ec84f92a-c268-4055-ac5a-27056107c7ba)
+
+For this reason, when exporting logs to **CSV**, the separator used is three consecutive characters:  
+**`***`**
+
+## 6. Time-Related Filters:
+
+![TimeFilters](https://github.com/gustavoparedes/QuickLog/assets/61228478/a99c0939-c0e4-4b64-968d-9ec532fdb755)
+
+Allows you to create a filter based on the timestamp of two logs, taking the **earliest timestamp** as the lower limit and the **latest timestamp** as the upper limit.  
+For example, this can be used to view all logs generated during a user's session.
+
+**First, select the two logs you want to use for the time range filter. Then, click the "Time Range" button.**
+
+![TimeRange](https://github.com/gustavoparedes/QuickLog/assets/61228478/6b2ef126-1b13-4fca-9755-74619f9ae6c7)
+
+You can also create a time filter for a **specific number of minutes** around an event's timestamp.  
+For example, if an event occurred at **14:01:31** and we use the **"Minutes Around"** option with **1 minute**, it will filter all events between **one minute before and one minute after**, meaning from **14:00:31 to 14:02:31**.
+
+
+## 7. Log Console:
+
+Displays operation messages.
+
+## 8. Custom Filters:
+
+Allows granular filtering of any field in each log.  
+Keep in mind that **basic filters** only display categorized events.  
+Basic **custom filters** can be created, including text search options; this text will be searched in the **EventMessage** and **EventMessageXML** fields.
+
+![Filter](https://github.com/user-attachments/assets/0d71436b-2063-4d37-9e60-6d30f82a0b64)
+
+Filters can be applied to **all log fields**. The search logic works as follows:  
+- Between **different fields**, the search applies an **AND** operation.  
+- Within **the same field**, it applies an **OR** operation.
+
+For example, to search for all logs with **EventID 5615**, regardless of any other condition, the query would be:
+
+![FilterBar1](https://github.com/user-attachments/assets/831e6770-020c-4ad4-b256-eb5d12f5ff8a)
+
+If we add another condition, for example, the user **S-1-5-18**, the search will combine both conditions using an **AND** operator.
+
+![FilterBar2](https://github.com/user-attachments/assets/f4aa5224-ff27-48b6-8d89-63894bb3eeb4)
+
+This means it will find all logs where the user is **S-1-5-18** **AND** the **EventID** matches.
+
+Now, let's say we want to get all logs where the user is **S-1-5-18** and the **EventID is 5615 or 5617**.
+
+![FilterBar3](https://github.com/user-attachments/assets/8b9eec53-8831-48b5-a355-3298b7ddc936)
+
+Adding one more condition, for example, that the log contains the word **Management**.
+
+![FilterBar4](https://github.com/user-attachments/assets/1cc34bcb-d50f-4407-a1d5-7816834dbcc3)
+
+This way, you can customize the filter to make it more granular and specific.
+
+## **Search Term:**
+
+Searches within the **EventMessage** or **EventMessageXML** fields and allows the use of logical operators **AND** and **OR**.
+
+For example, you can search for: `-1001`
+
+![Search1](https://github.com/user-attachments/assets/b2d9018f-10ea-40e2-b92f-1936e72d8793)
+
+Or search for: `-1001 AND logontype'>2<`
+
+![Search2](https://github.com/user-attachments/assets/20760c99-9d54-4631-8a13-934aaa2316bf)
+
+It will find matches whether **AND** or **OR** conditions are used within the **EventMessage** or **EventMessageXML** fields.
+
+You can also use **regular expressions (RegExp)** for searching by enabling the **Regexp** option.
+
+![Regexp](https://github.com/user-attachments/assets/7402fdac-4f09-4fb2-986c-6b907391612d)
+
+In the example above, `-100[12].*?LogonType'>2<'`, we are searching for `-1001` or `-1002`, followed by:  
+- Any character (`.`)  
+- Any number of times (`*`)  
+- That may or may not be present (`?`)  
+- Then **LogonType'>2<'**
+
+This allows us to find all interactive logins for users **1001** and **1002**.
+
+## 9. Progress Bar:
+
+The progress bar displays the loading progress of logs into the database as well as the log processing status.
+
+![Processing2](https://github.com/gustavoparedes/QuickLog/assets/61228478/91ecb5a7-3a78-42ce-b0f3-be907d4bfb8a)
+
+---
+
+## **Workflow:**
+
+The basic process involves loading one or multiple logs (usually all) from one or multiple machines, then searching for logs related to activities of interest, adding **labels** and **comments**, and finally creating a **timeline** of sessions or significant events, arranging them in **chronological order**.
+
+![Timeline1](https://github.com/gustavoparedes/QuickLog/assets/61228478/d68134d1-a69a-4c2c-95ba-ceae46f6b200)
+
+### **Step 1: Create a Workspace**
+
+The first step is to create a **workspace**.
+
+## **Create / Open / Close a Workspace:**
+
+![Workspaces](https://github.com/gustavoparedes/QuickLog/assets/61228478/1f3b0da8-bea2-4ee2-9b18-7d947ec7f59c)
+
+### **Step 2: Acquire Logs**
+
+Next, add logs using the **"Acquire Logs"** option for individual or multiple files, or use **"Process Log Folder"** to process all `.evtx` files inside a folder.  
+The logs will be stored in the database and classified based on predefined categories.
+
+### **Basic Filters:**
 
 ![BasicFilters3](https://github.com/gustavoparedes/QuickLog/assets/61228478/ea292296-9407-4188-8f0d-e96d53af7b08)
 ![BasicFilters4](https://github.com/gustavoparedes/QuickLog/assets/61228478/affe8b14-62a3-480d-b86a-0bcea6698e0b)
 
-At the end of the process, all logs will be classified, and the users found in the logs will be displayed.
+### **Step 3: Review Classified Logs**
+
+At the end of the process, all logs will be classified, and users found in the logs will be displayed.
 
 ![Final1](https://github.com/gustavoparedes/QuickLog/assets/61228478/aab04536-60c5-4f0f-a90e-fcceeb8bfd60)
 
-The compiled program can be run from a USB drive, external disk, or network folder without installation.
+---
+
+### **Portable Execution:**
+The compiled program can be executed from a **USB drive, external disk, or network folder** without requiring installation.
