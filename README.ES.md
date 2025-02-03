@@ -35,7 +35,7 @@ La hora en la que se creó el evento, almacenada en UTC, por lo cual se debe aju
 
 **UserID:**
 
-El descriptor de seguridad del usuario cuyo contexto se utiliza para publicar el evento. Para información detallada sobre este tema, consulta aquí:
+El descriptor de seguridad del usuario cuyo contexto se utiliza para publicar el evento. Para información detallada sobre este tema, consultar aquí:
 [https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn743661(v=ws.11)](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn743661(v=ws.11))
 
 **EventID:**
@@ -96,7 +96,7 @@ Al dar click sobre cualquier fila la informacion completa se mostrara en el cuad
 
 # 3. Cuadro de Texto:
 
-Muestra el contenido de la fila seleccionada y permite ver los resultados de búsqueda resaltados y leer cómodamente el contenido de los logs.
+Muestra el contenido de la fila seleccionada, permite ver los resultados de búsqueda resaltados y leer cómodamente el contenido de los logs.
 
 ![CuadrodeTexto](https://github.com/user-attachments/assets/2e0caeec-8cf9-4f03-b09e-c02585e821f6)
 
@@ -188,7 +188,7 @@ Hay que tener en cuenta que el archivo separado por comas o CSV puede dar proble
 ![Separacion por comas](https://github.com/user-attachments/assets/ec84f92a-c268-4055-ac5a-27056107c7ba)
 
 
-Por este motivo al exportar los logs a CSV la separacion esta dadta por tres caracteres seguidos asi: "***"
+Por este motivo al exportar los logs a CSV la separacion esta dada por tres caracteres seguidos asi: "***"
 
 # 6. Filtros Relacionados con el Tiempo:
 
