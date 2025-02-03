@@ -127,19 +127,21 @@ Y luego haga clic en "Guardar".
 
 Ahora puede cerrar la ventana del Gestor de Etiquetas y volver a ella cuando necesite crear o eliminar etiquetas.
 
-Para aplicar las etiquetas, debe seleccionar el log o los logs a los que desea aplicar la etiqueta. Seleccionando logs:
+Para aplicar las etiquetas, debe seleccionar el log o los logs a los que desea aplicar la etiqueta. 
 
-![SelectLog1](https://github.com/gustavoparedes/QuickLog/assets/61228478/73f813ec-8a75-4a64-861e-637c329e6842)
 
-Una vez seleccionado, lo verá así:
+Seleccionando logs:
 
-![SelectLog2](https://github.com/gustavoparedes/QuickLog/assets/61228478/8558a636-9621-4642-a90d-26bf281ab919)
+Solo dé clic sobre cada fila o log para seleccionarlo. Use las teclas Ctrl o Shift para seleccionar varios a la vez, como se hace en el Explorador de Windows.
 
-Puede seleccionar varios logs en fila presionando Shift.
+![Seleccionando Logs](https://github.com/user-attachments/assets/73180d75-88f5-4c2a-b7f7-15c673005143)
+
+
+Seleccionar varios logs en fila presionando Shift.
 
 ![SelectLog3](https://github.com/gustavoparedes/QuickLog/assets/61228478/0a7a3aef-77d3-49f4-a839-53ecf249c830)
 
-O seleccionar a su discreción manteniendo presionada la tecla Ctrl, como en el Explorador de Windows.
+O  presionando la tecla Ctrl, como en el Explorador de Windows.
 
 ![SelectLog4](https://github.com/gustavoparedes/QuickLog/assets/61228478/9dec77e6-9a73-424c-b035-0100afbb4e96)
 
@@ -181,6 +183,13 @@ Opciones para exportar los logs que se muestran actualmente en la tabla de logs 
 
 ![GuardarEn](https://github.com/gustavoparedes/QuickLog/assets/61228478/48892f2d-f599-4d7f-b28f-b57f8b738148)
 
+Hay que tener en cuenta que el archivo separado por comas o CSV puede dar problemas al momento de importarlo a una herramienta como libre office o Excel, esto debido a que dentro de los campos EventMessage y EventMessageXML pueden existir comas lo que puede conducir a la separacion erronea de los campos.
+
+![Separacion por comas](https://github.com/user-attachments/assets/ec84f92a-c268-4055-ac5a-27056107c7ba)
+
+
+Por este motivo al exportar los logs a CSV la separacion esta dadta por tres caracteres seguidos asi: "***"
+
 # 6. Filtros Relacionados con el Tiempo:
 
 ![FiltrosTiempo](https://github.com/gustavoparedes/QuickLog/assets/61228478/a99c0939-c0e4-4b64-968d-9ec532fdb755)
@@ -205,21 +214,54 @@ Permite realizar filtros granulares por cualquiera de los campos en cada log. Re
 ![Filter](https://github.com/user-attachments/assets/0d71436b-2063-4d37-9e60-6d30f82a0b64)
 
 
-Los filtros se pueden aplicar a todos los campos de los logs. La lógica de búsqueda entre diferentes campos es una operación AND, lo que significa que el filtro se aplica de la siguiente manera:
+Los filtros se pueden aplicar a todos los campos de los logs. La lógica de búsqueda entre diferentes campos es una operación AND, y dentro de un mismo campo, una OR.
 
-Primero, debe estar dentro del rango de tiempo como condición primaria, Y debe coincidir con el UserID, Y EventID, Y Machine Name, Y Level, Y LogName, Y Label, Y los términos de búsqueda dentro de los campos EventMessage o EventMessageXML.
+Por ejemplo, para buscar todos los logs que tengan el **EventID 5615**, sin importar ninguna otra condición, la consulta sería:
 
-**Término de Búsqueda:** Buscará dentro de los campos EventMessage o EventMessageXML y puede usar los operadores lógicos AND y OR.
+![BarraFiltros1](https://github.com/user-attachments/assets/831e6770-020c-4ad4-b256-eb5d12f5ff8a)
+
+Si añadiéramos otra condición, por ejemplo, el usuario **S-1-5-18**, la búsqueda combinaría ambas condiciones con un operador AND.
+
+![BarraFiltros2](https://github.com/user-attachments/assets/f4aa5224-ff27-48b6-8d89-63894bb3eeb4)
+
+Esto es todos los logs del usuario **S-1-5-18** Y **EventID**.
+
+Ahora, supongamos que queremos obtener todos los logs del usuario **S-1-5-18** y que tengan **EventID 5615 o 5617**.
+
+![BarraFiltros3](https://github.com/user-attachments/assets/8b9eec53-8831-48b5-a355-3298b7ddc936)
+
+Agregando una condicion mas,en este caso que contenga la palabra **Management**
+
+![BarraFiltros4](https://github.com/user-attachments/assets/1cc34bcb-d50f-4407-a1d5-7816834dbcc3)
+
+
+De esta forma, se puede personalizar el filtro para hacerlo más granular y específico.
+
+
+**Término de Búsqueda:** Buscará dentro de los campos EventMessage o EventMessageXML y puede usar los operadores lógicos AND y OR
 
 Por ejemplo, puedes buscar: -1001
 
-![Buscar1](https://github.com/gustavoparedes/QuickLog/assets/61228478/4e918d94-a504-4cd5-b3f2-8c3c9b9c8618)
+![Busqueda1](https://github.com/user-attachments/assets/b2d9018f-10ea-40e2-b92f-1936e72d8793)
+
 
 O buscar: -1001 AND logontype'>2<
 
-![Buscar2](https://github.com/gustavoparedes/QuickLog/assets/61228478/30698eb3-4a62-4620-8aa5-1b8a7ddcbeb9)
+![Busqueda2](https://github.com/user-attachments/assets/20760c99-9d54-4631-8a13-934aaa2316bf)
+
 
 Encontrará coincidencias de búsqueda ya sean condiciones AND u OR dentro de los campos EventMessage o EventMessageXML.
+
+Puede usar expresiones regulares para la búsqueda activando la opción Regexp.
+
+![Regexp](https://github.com/user-attachments/assets/7402fdac-4f09-4fb2-986c-6b907391612d)
+
+En el ejemplo anterior, **-100[12].*?LogonType'>2<**, buscamos -1001 o -1002, seguido de cualquier carácter (.), cualquier número de veces (*), que podría estar o no (?), y después LogonType'>2<.
+
+Esto nos permite encontrar todos los logins interactivos de los usuarios 1001 y 1002.
+
+
+
 
 # 9. Barra de Progreso:
 
@@ -253,6 +295,3 @@ Al final del procesamiento, verás todos los logs clasificados y se mostrarán l
 
 El programa compilado se puede ejecutar desde una unidad USB, disco externo o carpeta de red sin necesidad de instalación.
 
-# QuickLog
-
-![Finish2](https://github.com/gustavoparedes/QuickLog/assets/61228478/f7091152-5b05-4850-98f9-8847c100333c)
