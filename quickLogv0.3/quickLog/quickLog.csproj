@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>QuickLog.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="QuickLog.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="Syncfusion.Blazor.DropDowns" Version="25.1.39" />
+    <PackageReference Include="Syncfusion.Core.WinForms" Version="25.1.39" />
+    <PackageReference Include="Syncfusion.Grid.Windows" Version="25.1.39" />
+    <PackageReference Include="Syncfusion.SfAccordion.WPF" Version="25.1.39" />
+    <PackageReference Include="Syncfusion.SfDataGrid.WinForms" Version="25.1.39" />
+    <PackageReference Include="Syncfusion.SfGrid.WPF" Version="25.1.39" />
+    <PackageReference Include="Syncfusion.Tools.Windows" Version="25.1.39" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Resource1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
