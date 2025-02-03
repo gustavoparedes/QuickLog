@@ -131,3 +131,23 @@ Shows the progress of logs being loaded into the database and processed.
 The general process consists of acquiring and categorizing logs, applying tags and comments, and creating a timeline of relevant events.
 
 ![Timeline](https://github.com/gustavoparedes/QuickLog/assets/61228478/d68134d1-a69a-4c2c-95ba-ceae46f6b200)
+
+
+The first step is to create a workspace.
+
+# Create / Open / Close a Workspace:
+
+![Workspace](https://github.com/gustavoparedes/QuickLog/assets/61228478/1f3b0da8-bea2-4ee2-9b18-7d947ec7f59c)
+
+Then, add logs using the "Acquire Logs" option for one or multiple files or "Process Log Folder" to process all .evtx files within a folder. The logs will be stored in the database and categorized according to predefined categories.
+
+Basic Filters:
+
+![BasicFilters3](https://github.com/gustavoparedes/QuickLog/assets/61228478/ea292296-9407-4188-8f0d-e96d53af7b08)
+![BasicFilters4](https://github.com/gustavoparedes/QuickLog/assets/61228478/affe8b14-62a3-480d-b86a-0bcea6698e0b)
+
+At the end of the process, all logs will be classified, and the users found in the logs will be displayed.
+
+![Final1](https://github.com/gustavoparedes/QuickLog/assets/61228478/aab04536-60c5-4f0f-a90e-fcceeb8bfd60)
+
+The compiled program can be run from a USB drive, external disk, or network folder without installation.
