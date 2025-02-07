@@ -23,7 +23,7 @@ TimeCreated, UserID, EventID, Machine, Level, LogName, EventMessage, EventMessag
 
 **TimeCreated:**
 
-The time the event was created, stored in UTC, so it must be adjusted to the correct time zone by extracting it from the log and using the evidence's time zone to establish the real time.
+The time the event was created, stored in UTC, so it must be adjusted to the correct time zone by extracting it from the windows registry and using the evidence's time zone to establish the real time.
 
 ![UTC](https://github.com/user-attachments/assets/b9e54019-1823-4a36-9c11-52c2e9e84b50)
 
